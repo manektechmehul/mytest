@@ -19,8 +19,7 @@ if ($levels == 1)
         #echo "<pre>"; print_r($prop_category); exit;
         $searchboxTemplate = "$base_path/modules/$module_path/templates/searchbox.tpl";
         $smarty->assign('searchboxTemplate', $searchboxTemplate);        
-        $moduleObject->DisplayFeatureList(); 
-        dsfsdf 
+        $moduleObject->DisplayFeatureList();       
     }else{
        
         // if there are no categories, we must display all - else how will a a user find them        
