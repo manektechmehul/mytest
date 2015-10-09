@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Church Growth Research Programme</title>
+<meta name="keywords" content="Church Growth Research Programme" />
+<meta name="description" content="Church Growth Research Programme" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="/favicon.ico" rel="shortcut icon" />
+
+<!-- CS og start -->
+<!-- CS og end -->
+<meta property="og:image" content="http://www.churchgrowthresearch.org.uk/images/sharelogo.jpg" />
+
+<link href="/css/page-format.css" rel="stylesheet" type="text/css" />
+<link href="/css/styles.css" rel="stylesheet" type="text/css" />
+<link href="/css/home-bg.css" rel="stylesheet" type="text/css" />
+<link href="/css/colorbox.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<link href="/css/cookiecuttr.css" rel="stylesheet" type="text/css" /> <!-- cookie cuttr  -->
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/jquery.cookiecuttr.js"></script>
+
+
+<script type="text/javascript" src="http://use.typekit.com/rlf7bqt.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script type="text/javascript" src="/js/swfobject.js"></script><!-- script for swf -->
+<script type="text/javascript" src="/js/functions.js"></script><!-- script for general functionality -->
+<script type="text/javascript" src="/js/superfish.js"></script><!-- script for dropdown -->
+<script type="text/javascript" src="/js/newsticker.jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.colorbox-min.js"></script><!-- script for colorbox -->
+
+<script type="text/javascript">
+    $(document).ready(function() {    
+	
+	
+	 $.cookieCuttr({ 
+		cookieDeclineButton: false, 
+		cookieAcceptButtonText: "OK",  
+		cookieWhatAreTheyLink: '/cookies_and_terms', 
+		cookieAnalyticsMessage: "We use cookies just to track visits to our website. We store no personal details.",
+		cookieNotificationLocationBottom: true,
+		cookieWhatAreLinkText: "Find out more about our cookies and how to manage them"
+	});
+	
+	    
+        $('#newsticker').newsticker(); 
+		$(".bishopvideo").colorbox();   
+		
+		 // Expand Panel
+		$("#open").click(function(){
+			$("#loginpanel").slideDown("slow");	
+		});		
+		// Collapse Panel
+		$("#close").click(function(){
+			$("#loginpanel").slideUp("slow");	
+		});		
+		// Switch buttons from "Log In | Register" to "Close Panel" on click
+		$("#toggle a").click(function () {
+			$("#toggle a").toggle();
+		});
+		
+		//////////////////////////////
+		//  Speach bubble - hover   //
+		//////////////////////////////
+		
+		$('.davidvideo').hover(function() {
+			// note the extra stop() command to stop the action queue building up 
+			$('#speech-left').stop().animate(
+			// grow
+			{ height:179, width: 235, top: 10, left: 470 }, {
+				duration: 'fast',
+				easing: 'linear'         
+			})
+			
+		}, function() {                 
+		   // shrink
+			$('#speech-left').stop().animate(
+			{ height:0, width: 0, top: 215, left: 650}, {
+				duration: 'fast',
+				easing: 'linear'
+			})
+		});
+		
+		$('.richardvideo').hover(function() {
+			// note the extra stop() command to stop the action queue building up 
+			$('#speech-right').stop().animate(
+			{ height:179, width: 235, top: 10, right: 0 }, {
+				duration: 'fast',
+				easing: 'linear'         
+			})
+			
+		}, function() {                 
+			$('#speech-right').stop().animate(
+			{height:0, width: 0, top: 215, right: 180}, {
+				duration: 'fast',
+				easing: 'linear'
+			})
+		});  
+    });
+</script>
+
+<!--[if IE]>
+<style type="text/css" media="screen">
+body { behavior:url(/css/csshover.htc); font-size:100%; }
+</style>
+<![endif]-->
+
+<!--[if IE 7]>
+<style type="text/css" media="screen">
+</style>
+<![endif]-->
+
+<!--[if IE 6]>
+<style type="text/css" media="screen">
+#homepromos .homepromo { margin:5px 7px 6px 3px; }
+#login { left:157px; }
+</style>
+<![endif]-->
+
+</head>
+
+<body onload="MM_preloadImages('/images/titlebg-greenover.png')">
+
+<!-- CS login start -->
+<!-- CS login end -->
+
+<div id="container">
+
+  <div id="header">
+
+	<div id="logo">
+      <a href="/"><img src="/images/churchgrowthlogo.png" width="426" height="200" alt="Church Growth Research Programme" border="0" /></a>
+      <script type="text/javascript" defer="defer">
+		var so = new SWFObject("/swf/churchgrowthlogo.swf", "Church Growth Research Programme", "426", "200", "7", "");
+		so.addParam("wmode","transparent");
+		so.write("logo");
+      </script>
+    </div>
+
+    <!-- CS Tweet Start -->
+    <div id="twitter-container">
+      <div class="twitter-feed">
+        <div id="twitterusertimeline" class="tweets" >
+          <div class="tweet">
+            <p class="text">A new post is being developed to promote Anglican catholic models of evangelisation within the Church of England: <a target="_blank" href="#">http://tiny.cc/CGRPlink1</a><!--{$tweet}--><br />
+            <span class="time"><a target="_blank" href="{$tweet_status_link}">two days ago<!--{$tweet_time}--></a> | <a href="http://twitter.com/churchgrowthrd" target=_blank>follow us</a></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CS Tweet End -->
+        
+  </div><!-- end id="header" -->
+
+  <div id="topnav">
+      <!-- CS topnav start -->
+      <ul>
+        <li class="navon"><a href="/">Home</a></li>
+        <li><a href="/about_the_programme">About the Programme</a>
+          <ul>
+            <li><a href="/what_is_it_aiming_to_achieve">What is it aiming to achieve?</a></li>
+            <li><a href="/strands_of_the_research">Strands of the research</a></li>
+            <li><a href="/research_teams">Research teams</a></li>
+            <li><a href="/timeline">Timeline</a></li>
+            <li><a href="/theological_justification_rationale">Theological justification / rationale</a></li>
+          </ul>
+        </li>
+        <li> <a href="/existing_material">Existing Material</a></li>
+        <li class="navon"><a href="/findings">Findings</a>
+          <ul>
+            <li><a href="/what_is_it_aiming_to_achieve">What is it aiming to achieve?</a></li>
+            <li><a href="/strands_of_the_research">Strands of the research</a></li>
+            <li><a href="/research_teams">Research teams</a></li>
+            <li><a href="/timeline">Timeline</a></li>
+            <li><a href="/theological_justification_rationale">Theological justification / rationale</a></li>
+            <li><a href="/research_teams">Research teams</a></li>
+            <li><a href="/timeline">Timeline</a></li>
+            <li><a href="/theological_justification_rationale">Theological justification / rationale</a></li>
+          </ul>
+        </li>
+        <li><a href="/discussions">Discussions</a></li>
+        <li><a href="/contact_us">Contact Us</a></li>
+      </ul>
+      <!-- CS topnav end -->
+  </div><!-- end id="topnav" -->
+
+  <!--  start newsticker -->
+  <div id="newsticker-wrap">
+    <h3>Latest News</h3>
+    <ul id="newsticker" class="newsticker">
+      <!-- CS news start-->
+      <li>22/07/12&nbsp; <a href="/news/2">Newsticker added to site</a></li>
+      <li>19/07/12&nbsp; <a href="/news/1">New Website Features added  !!</a></li>
+      <li>19/07/12&nbsp; <a href="/news/3">Finally stopped raining in sheffield</a></li>
+      <!-- CS news end-->
+    </ul>
+  </div>
+  <!-- end newsticker -->
+  
+  <div id="homeintro">
+    <div id="content">
+        <h1><!-- CS title start -->Researching Church Growth<!-- CS title end --></h1>
+        <!-- CS CONTENT STARTS HERE -->
+        <p><span class="large">Aenean et metus velit. Sed consectetur libero nec ante sagittis pulvinar. Aenean bibendum metus vel erat congue mattis. Mauris eget nisl eros varius vehicula.</span></p>
+		<p>Vivamus sollicitudin, lectus nec tincidunt blandit, sem elit volutpat lacus, non rhoncus lacus ligula nec leo. Vestibulum vitae odio tincidunt orci ultricies hendrerit nec non nisi. Quisque ut tortor sit amet ligula posuere blandit eu in urna. Aenean et augue in risus lobortis semper. Sed mollis diam nisi. Suspendisse potenti.</p>
+		<p>Vivamus ac turpis diam, nec dapibus turpis. In posuere accumsan ut sit amet ligula posuere cursus. <a href="#">Click here to find out more</a>.</p>
+        <!-- CS CONTENT ENDS HERE -->
+    </div><!--end of id="content"-->
+    <img id="speech-left" src="/images/speech-left.png"></img> 
+    <img id="speech-right" src="/images/speech-right.png"></img> 
+    <div id="bishops">
+      <div class="david">
+        <p><a href="javascript: return null;" class="davidvideo">David Urquhard Bishop of Birmingham</a></p>
+      </div>
+      <div class="richard">
+         <p><a title="Richard Chartres Bishop of London" href="/vimeo_handler/vimeo_handler.php?height=450&width=800&clip_id=46818017" class="richardvideo bishopvideo cboxElement" rel="bishop_promos">Richard Chartres Bishop of London</a></p>
+      </div>
+    </div>
+  </div>
+        
+        
+  <div id="homepromos">
+    <a href="/research_teams" class="homepromo homepromo1"><h3>Meet the teams</h3></a>
+<!-- CS case studies latest start -->
+    <div class="homecasestudy">
+      <a href="#" class="homepromo homepromo2" style="background:url(/images/homepromo-casestudy.jpg);"><h3>Sudden growth in Norwich</h3></a>
+      <p class="casestudiesbuttons"><a class="casestudybutton" href="#">Read more</a> &nbsp;|&nbsp; <a class="casestudybutton" href="#">View all case studies</a></p>
+    </div>
+<!-- CS case studies latest end -->
+    <a href="/discussions" class="homepromo homepromo3"><h3>Join the debate</h3></a>
+    <a href="/literature_on_church_growth" class="homepromo homepromo4"><h3>Literature on church growth</h3></a>
+    <a href="/statistics" class="homepromo homepromo5"><h3>Key stats and trends</h3></a>
+    <a href="/progress_findings_reports" class="homepromo homepromo6"><h3>Findings</h3></a>
+  </div>
+
+</div><!-- end of id="container" -->
+
+<div id="footer-container">
+
+    <div id="footer">
+      <div class="logos">
+        <a href="http://www.churchofengland.org/about-us/structure/archbishopscouncil.aspx" target="_blank"><img src="/images/footerlogo-archbishopscouncil.png" width="111" height="84" alt="The Church of England Archbishops' Council" /></a><a href="http://www.churchofengland.org/about-us/structure/churchcommissioners.aspx" target="_blank"><img src="/images/footerlogo-churchcommissioners.png" width="76" height="84" alt="Church Commissioners for England" /></a><a href="http://www.churchofengland.org/" target="_blank"><img src="/images/footerlogo-churchofengland.png" width="237" height="84" alt="The Church of England" /></a>
+      </div>
+      <div class="credits">
+        <p class="legal">Copyright &copy; The Church of England Archbishops' Council <img align="absmiddle" src="/images/footer-divider.png" width="9" height="21" alt="Divider" /> <a href="/cookies_and_terms">Cookies &amp; Legal</a> <img align="absmiddle" src="/images/footer-divider.png" width="9" height="21" alt="Divider" /> <a href="/links">Links</a> <img align="absmiddle" src="/images/footer-divider.png" width="9" height="21" alt="Divider" /> <a href="/sitemap">Site Map</a></p>
+        <p class="credit"><a href="http://www.creativestream.co.uk" target="_blank">Website design by Creative Stream</a></p>
+        <p class="smallprint">The Commissioners are a statutory body, governed by the Church Commissioners Measure 1947 and is a registered charity no. 1140097. The Archbishops' Council is a registered charity no. 1074857.</p>
+      </div>
+    </div><!-- end of id="footer" -->
+
+</div><!-- end of id="footer-container" -->
+
+<script type="text/javascript">
+if (jQuery.cookie('cc_cookie_decline') == "cc_cookie_decline") {
+// keep using cookies until they are delined 
+} else {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'ANALYTICS_CODE_HERE']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+}
+</script>
+
+</body>
+</html>

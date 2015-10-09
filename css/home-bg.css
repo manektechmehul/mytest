@@ -1,0 +1,50 @@
+/* layout */
+html, body { background:#fff url(/images/pagebg-home.png) top repeat-x; }
+#logo { width:426px; height:200px; }
+#header { width:960px; height:167px; overflow:hidden; }
+
+/* twitter */
+#twitter-container { position:absolute; top:57px; right:0; width:460px; height:110px; overflow:hidden; background:url(/images/twitter.png) bottom right no-repeat; }
+.twitter-feed, .tweet { width:318px; }
+#twitterusertimeline .tweet { min-height:24px; }
+#twitterusertimeline .tweet .text { font-size:14px; line-height:18px; color:#666; text-align:right; }
+#twitterusertimeline p.text a { color:#569823; text-decoration:none; }
+#twitterusertimeline p.text a:hover { color:#569823; text-decoration:underline; }
+#twitterusertimeline p.text .time { font-style:italic; }
+
+/* home intro */
+#homeintro { height:459px; overflow:hidden; width:960px; background:url(/images/home-banner.jpg) 230px 0px no-repeat; position:relative; }
+#content { width:430px; float:left; }
+#content p, #content .large { color:#fff; }
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 { color:#ddd4ae; }
+#content a, #content a:hover { color:#ddd4ae; }
+#bishops { float:right; width:472px; height:459px; position:relative; }
+#bishops p { margin:0; text-indent:-5000px; }
+#bishops .david { float:left; width:244px; height:459px; }
+#bishops .richard { float:right; width:228px; height:459px; }
+#bishops .david p a { display:block; position:absolute; bottom:18px; left:0; background:url(/images/bishop-title-david.png) bottom left no-repeat; width:244px; height:300px; z-index:15; }
+#bishops .richard p a { display:block; position:absolute; bottom:18px; right:0; background:url(/images/bishop-title-richard.png) bottom left no-repeat; width:228px; height:300px; z-index:15; }
+#bishops .david p a:hover { background:url(/images/bishop-title-david.png) bottom right no-repeat; }
+#bishops .richard p a:hover { background:url(/images/bishop-title-richard.png) bottom right no-repeat; }
+
+#speech-left { position:absolute; z-index:10; height:0px; width:0px; top:215px; left:650px; }
+#speech-right { position:absolute; z-index:10;  height:0px; width:0px; top:215px; right:180px; }
+
+/* homepromos */
+#homepromos { width:957px; margin:0 0 35px; height:382px; overflow:hidden; background:url(/images/homepromo-bg.png); padding:1px 0 0 1px;  }
+#homepromos a.homepromo { width:308px; height:180px; float:left; margin:5px 6px 6px 5px; position:relative; text-decoration:none; }
+#homepromos a.homepromo h3 { line-height:31px; font-size:24px; text-align:right; position:absolute; bottom:24px; right:0; color:#fff; text-shadow:1px 1px 0 #4c7729; text-decoration:none; background:url(/images/titlebg-green.png); padding:3px 8px 0; margin:0; }
+#homepromos a.homepromo:hover h3 { text-decoration:none; color:#e3f7d3; background:url(/images/titlebg-greenover.png); }
+
+#homepromos a.homepromo1 { background:url(/images/homepromo-team.jpg); }
+#homepromos a.homepromo3 { background:url(/images/homepromo-discuss.jpg); }
+#homepromos a.homepromo4 { background:url(/images/homepromo-litreview.jpg); }
+#homepromos a.homepromo5 { background:url(/images/homepromo-keystats.jpg); }
+#homepromos a.homepromo6 { background:url(/images/homepromo-findings.jpg); }
+
+#homepromos .homecasestudy { width:308px; height:180px; float:left; margin:5px 6px 6px 5px; position:relative; }
+#homepromos a.homepromo2 { position:static; width:308px; height:180px; margin:0; }
+#homepromos .homecasestudy p { margin:0; font-family:"ff-meta-web-pro", Arial, Helvetica, sans-serif; }
+#homepromos .homecasestudy p.casestudiesbuttons { color:#9f769e; position:absolute; bottom:0; right:0; padding:1px 8px 0; background:url(/images/titlebg-purple.png); }
+#homepromos .homecasestudy p.casestudiesbuttons a.casestudybutton { line-height:22px; font-size:14px; text-align:right; color:#fff; text-shadow:1px 1px 0 #371634; text-decoration:none; margin:0 0 0 1px; }
+#homepromos .homecasestudy p.casestudiesbuttons a.casestudybutton:hover { text-decoration:none; color:#f6d7f5; }

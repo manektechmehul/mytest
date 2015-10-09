@@ -1,0 +1,1 @@
+To Install these new icons, simple copy them over there exsisting icons in the admin.images folder.

@@ -1,0 +1,49 @@
+------------------------------------------
+- Site Details
+------------------------------------------
+
+1.	Creative Stream -v3	15/10/2012
+2.	church Growth 	-v3	15/10/2012
+3.	Style and Image -v3	15/10/2012
+4.	Prodental	-v3	15/10/2012
+5.	Remit		-v3	15/10/2012
+6.	Naturescoach	-v3	15/10/2012
+7.	SIX-AD		-v3	15/10/2012
+8.	Life Church	-v3	15/10/2012
+9.	VAS Fuse 	-v3.1 20/11/2012
+10. Bucknell Whitehouse 4v.0 31/05/2013
+
+------------------------------------------
+- Version 
+------------------------------------------
+========================
+31/05 - version 4.0
+========================
+Multiple tweets
+Requires new templates to feature the section loop
+
+========================
+13/11/2012 - Version 3.1
+========================
+// added utf8_decode function to remove special characters in the be\twitter.php
+$tweet_desc = utf8_decode($tweet_desc);
+
+======================
+15/10/2012 - Version 3
+======================
+updated the twitter url, as it was depricated - in \be\twitter
+$feed = 'https://api.twitter.com/1/statuses/user_timeline.rss?screen_name=' . $twitter_user_id . '&count=' . $limit;
+
+======================
+13/09/2012 - Version 2
+======================
+Now using RSS, rather than atom on the usertimeline url, the new version of the be/twitter now always gets a tweet. 
+There is no week time out, meening the 'no tweets message is required'
+
+======================
+12/2011 - Version 1
+======================
+based on the twitter.search function needed to be changed due to changes to twitters feed.
+
+
+

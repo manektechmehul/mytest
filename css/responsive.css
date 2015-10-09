@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/*--------------media query css------------------*/	
+/*------------tablet landscape view------*/
+ 
+@media (max-width:1199px) {
+.logo-inner { width: 24.5%; }
+.side-nav li a { font-size: 20px; }
+.enumenu_ul li:first-child { margin-left: 25px; margin-right: 22px }
+.enumenu_ul li { margin-right: 22px; }
+.enumenu_ul li a { font-size: 15px; }
+.back-head-image { background-position: center center }
+/*.welcome-menu { margin-left: 8%; width: 49.667% }*/
+.events-inner { padding: 26px 30px 8px 31px }
+.evnet-area h2 { margin-bottom: 17px; }
+}
+
+@media (max-width:991px) {
+.inner-slider { height:280px; }
+.conference-image { display: none }
+.login-page footer h1 { font-size: 59px; }
+/*.welcome-menu { margin-left: 0%; width: 49.667% }*/
+.block-content-overlay { height: auto; min-height: 100%; padding: 34px 25px 34px 32px; position: relative; top: 0; width: 100%; z-index: 20; }
+.back-head-image { min-height: 529px; background-position: center center }
+.side-nav li a { font-size: 20px; }
+.enumenu_ul li a { font-size: 11px; }
+.side-nav li { min-height: 114px; }
+.events p { color: #fff !important; font-family: "proxima-nova", sans-serif !important; font-weight: 600 !important; }
+.evnet-area h3 { color: #b2d292; font-family: "brandon-grotesque", sans-serif; margin-bottom: 3px; text-transform: uppercase; }
+.evnet-area h3 a { color: #b2d292; font-family: "brandon-grotesque", sans-serif; letter-spacing: 0.1em; ; text-transform: uppercase; }
+.event-inner:last-child { margin-bottom: 0px; }
+.events-inner { background: #498a60 none repeat scroll 0 0; padding: 26px 30px 10px 31px; }
+.logo-container { min-height: 420px; height: 100% }
+.logo-container img { padding: 0 13px; width: 100%; }
+aside .acordian-ttl { font-size: 19px; font-weight: 700; margin: 12px 0 0 14px; }
+ul.accordion li a { color: #000000 !important; font-family: "brandon-grotesque", sans-serif !important; font-size: 15px; font-weight: 700; }
+.open-menu { display: block; margin: 1px 0 0 0 !important; padding-left: 24px !important; padding-top: 5px !important; }
+footer p { padding-left: 1px; }
+.website a { color: #b593b1; display: inline-block; font-family: "proxima-nova", sans-serif; font-size: 12px; font-weight: 100; margin-right: 4px; }
+ul.accordion-content li a { color: #416856 !important; font-family: "brandon-grotesque", sans-serif; font-size: 12px !important; font-weight: 700; line-height: 25px; margin-bottom: 6px; }
+.evnet-area h2 { margin-bottom: 16px; }
+ul.accordion-content.open-menu li a { line-height: 15px !important; display: block; }
+ul.accordion-content.open-menu li { padding-bottom: 4px; }
+.logo-inner { display: none }
+.small-logo { display: inline-block; margin-right: 12px; margin-top: -8px; vertical-align: middle; width:28px; height:51px; }
+.slider-inner { width: 94.8%; margin: 0 auto; float: none; padding-right: 0; }
+.logo-text a { padding-left: 9px; }
+.enumenu_ul li a { font-size: 15px; }
+.story-block { min-height: 100%; }
+.buildingshot { display: none }
+.evnet-area { margin-left: 4px; }
+}
+
+@media (max-width:900px) {
+.col-xs-12.col-sm-6.col-md-6.clearfix.overlay-block { width: 99.7% }
+.evnet-area .col-md-4:first-child { display: none }
+.evnet-area .col-md-4 { width: 50% }
+.story-block { min-height: 100%; }
+.events p { font-size: 16px !important; }
+.evnet-area h2 { margin-bottom: 17px; }
+.event-inner { margin-bottom: 26px; }
+.bic_calendar td div { font-size: 18px; }
+}
+
+/*------------mobile landscape  view------*/
+@media (max-width:767px) {
+.content-area { min-height:100px; }
+.inner-slider { height:200px; }
+.small-logo { display: inline-block; margin-right: 12px; margin-top: -8px; vertical-align: middle; }
+.enumenu_ul li a { font-size: 11px; }
+.logo-inner { display: none }
+.evnet-area { margin-bottom: 4px; margin-left: 0px; margin-right: 0; position: relative; }
+.evnet-area .col-md-4:first-child { display: none }
+.conference-image { display: none }
+.evnet-area h3 a { display: inline }
+.container { padding-left: 0; padding-right: 0 }
+.login-page .container { padding-left: 15px; padding-right: 15px }
+.menu-icon { display: block; text-align: right }
+.wrapper { margin: 0 auto; }
+.social-media ul { float: right; margin-bottom: 0; margin-right: 0px; margin-top: 20px; }
+.header-top { min-height: 100px; position: relative; }
+.mainlogo { left: 0; margin-left: 0; position: relative; top: 0; width: auto; margin: 23px auto 0; text-align: center; display: table; }
+.enumenu_ul li { width: 100% !important; height: auto; padding: 0px 0 !important; }
+.enumenu_container { background: #498a60; }
+.enumenu_ul { display: none; z-index: 9999; margin-bottom: 0; width: 100%; }
+.enumenu_ul li:first-child { margin: 0 }
+.enumenu_ul li { padding: 0; margin: 0 }
+.enumenu_ul li a:hover::before { display: none }
+.enumenu_ul li a { color: #fff; text-align: center; padding-top: 10px; }
+.enumenu_ul li a { border-bottom: 1px solid #ccc !important; }
+.logo-text span { margin: 0 auto; padding-left: 0; }
+.welcome-menu { padding-top: 27px; text-align: center; }
+.logo-inner { padding-left: 0; width: 100%; border: 0; float: none; }
+.logo-container { padding-left: 0; margin-left: 0 }
+.slider-inner { width: 100%; padding-right: 0 }
+.logo-text { text-align: center; padding-left: 0; padding-right: 0; float: none }
+.logo-text a { padding-left: 0; text-align: center; display: table; margin: 0 auto }
+.slider { float: none; width: 100%; border: 0; margin: 0 }
+.side-nav { float: none; width: 100%; border: 0; margin: 0; }
+.side-nav li, .side-nav li:last-child { min-height:50px; padding:10px 0; }
+.wrapper .container .row { margin-left: 0; margin-right: 0 }
+.overlay-block, .conference-image { float: none; padding: 0; }
+.story-block { border-right: 0 none; margin-left: 0; }
+.back-head-image { border: 0; margin-right: 0; }
+.event-img { border: 0; margin-left: 0; }
+.calender-area {; border-left: 0 none; margin-right: 0; }
+.the-club-img { margin-left: 0; }
+.g-map { border-left: 0; }
+#map_wrapper { height: 181px; margin-right: 0; }
+.website { text-align: center }
+.website a { color: #b593b1; display: inline-block; font-family: "proxima-nova", sans-serif; font-size: 12px; font-weight: 100; margin-right: 0; }
+.footer-menu { text-align: center }
+footer p { padding-left: 0; }
+.head { border-left: 0 none; border-right: 0 none; margin: 0; }
+.header-text h1 { font-size: 29px; }
+.login-page footer h1 { font-size: 56px; }
+.back-head-image { background-position: center center; min-height: 376px; }
+.side-nav li a { font-size: 22px; }
+.logo-container { min-height: none; }
+.logo-container img { width: auto }
+.events { margin-top: 0px; margin-bottom: 4px }
+.conference-image { margin-top: 4px }
+.the-club { margin-bottom: 0; background: #fff }
+footer { margin-top: 4px }
+.the-club-holder { margin-bottom: 4px }
+.slider { margin-bottom: 4px }
+.events a { top: 68px; }
+.block-content-overlay { position: relative; top: 0; width: 100%; z-index: 20; height: auto; }
+.logo { padding: 20px 0; }
+.logo img { width: 96px }
+.welcome-menu { margin-left: 0; padding-left: 0; padding-right: 0; width: 100%; }
+.evnet-area .col-md-4 { width: 100%; }
+.events { padding-bottom: 14px; height: 100% !important; }
+}
+
+@media (max-width:738px) {
+.login-page footer h1 { font-size: 49px; }
+}
+
+/*----------optional css------*/
+@media (max-width:645px) {
+h1 { font-size: 40px; }
+.login-page footer h1 { font-size: 25px; }
+.events p span { padding-top: 5px; line-height: normal; }
+}
+
+@media (max-width:568px) {
+.bxslider > li { background-size: 100% auto; height: 270px; }
+}
+
+@media (max-width:480px) {
+.inner-slider { height:140px; }
+.bxslider > li { height: 189px; }
+.login-page footer p { padding: 0 10px; }
+.welcome-menu ul li:nth-child(2) { margin-right: 0 }
+.welcome-menu ul li { display: inline-block; padding-left: 24px; margin-right: 10px; }
+.welcome-menu p { display: table; margin: 0 auto; padding-right: 0; }
+}
+
+@media (max-width:375px) {
+.club-content-overlay, .the-club-img { height:200px; }
+.bxslider > li { height: 160px; }
+.club-content-overlay a { font-size: 14px !important; }
+.loginform-area .form-control { width: 100%; }
+.login-page footer h1 { font-size: 21px; }
+.logo-text a { font-size: 22px; }
+}

@@ -1,0 +1,8 @@
+#content .furtherquestions h2 { color:#85BDC4; border-color:#85BDC4; }
+#form-table input[type=submit] { background:#85BDC4; }
+@media (min-width:768px) {
+#content form { padding:20px 15px; background:#F4F4F4; border:1px solid #85BDC4; border-top:0; }
+#content .furtherquestions { clear:both; padding:20px 20px 0; background:#F4F4F4; border:1px solid #85BDC4; border-bottom:0; }
+#content .furtherquestions p, #content .furtherquestions h2 { margin:0; }
+#content .furtherquestions h2 { border:none; }
+}

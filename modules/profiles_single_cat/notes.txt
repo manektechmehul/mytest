@@ -1,0 +1,15 @@
+This version of profiles uses the single category list as seen in pitsmore surgery.
+
+There is an override in the main.php to go DisplaySinglePageCategoryList in the class.
+The class then get all the categories and groups them up and dumps them into the SinglePageCategoryList.tpl
+** The CATEGORIES ARE HARDCODED IN THE FUNCTION DisplaySinglePageCategoryList & in the template file SinglePageCategoryList.tpl
+
+DB::
+Also the profiles table has a new column called profiles_category
+
+Admin 
+has been updated to ::
+- select the category from a drop down 
+- hide the sub menu 
+- list item grouped by category
+- hidden the featured and order functions

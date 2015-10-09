@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /
+
+RewriteRule eventsrss.xml /rss/events.php
+RewriteRule events.xml /rss/events.php
+RewriteRule newsrss.xml /rss/news.php
+RewriteRule news.xml /rss/news.php
+RewriteRule ^blog/(.*).xml$ /rss/blog.php?blog=$1
+RewriteRule ^test.xml$ /rss/blog.php?blog=test

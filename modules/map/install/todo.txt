@@ -1,0 +1,16 @@
+ALTER TABLE `directcolour`.`member_user` ADD COLUMN `lon` VARCHAR(20) NULL AFTER `trained_by`, ADD COLUMN `lat` VARCHAR(20) NULL AFTER `lon`; 
+ALTER TABLE `directcolour`.`member_user` ADD COLUMN `geo_status` TINYINT(1) DEFAULT '0' NULL AFTER `lat`; 
+ 
+add the update geo page. and set the content_type.page_type = 20 for it
+  
+
+86c7b4be7d2745def22a0f224ae492df51ab495156444e90e2107286f00b6acd
+ 
+copy the template, the new css and the images/maps folder
+
+
+ALTER TABLE `member_user` ADD COLUMN `show_on_map` TINYINT(1) DEFAULT '0' NULL AFTER `geo_status`;
+
+CREATE TABLE `show_on_map`( `id` TINYINT(1) NOT NULL AUTO_INCREMENT , `name` VARCHAR(250) , PRIMARY KEY (`id`) ); 
+
+

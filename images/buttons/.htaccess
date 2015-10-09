@@ -1,0 +1,7 @@
+php_flag register_globals off
+
+Options +FollowSymLinks
+RewriteEngine on
+
+#RewriteRule ^([^_]*)_([^_]*)_([^_]*)\.gif$ /admin/images/genbutton/index.php?style=$1&text=$2&state=$3 [NC]
+RewriteRule ([^-]*)-([^-]*)-([^-]*)\.png$ /images/buttons/index.php?style=$1&text=$2&state=$3 [NC]

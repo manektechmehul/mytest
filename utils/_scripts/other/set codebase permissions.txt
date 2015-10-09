@@ -1,0 +1,17 @@
+# cd /home/httpd/vhosts/codebase.co.uk
+# ls -l | grep httpdocs | awk '{print $3}'
+# owner is called codebase
+
+
+# goto shell (using mRemote) and type this - to set the correct site ownership
+# you need to do this after you sync from a windows based copy of the system - using gr-sync or similar
+cd /home/httpd/vhosts/codebase.co.uk
+chown codebase -R httpdocs/
+chmod 777 httpdocs/admin/images/buttons/cache
+chmod 777 httpdocs/images/buttons/cache
+chmod 777 httpdocs/modules/twitter/twittercache
+chmod 777 httpdocs/php/securimage/image_data
+chmod 777 httpdocs/UserFiles/File
+chmod 777 httpdocs/UserFiles/Image
+chmod 777 httpdocs/UserFiles/Thumbnails
+chmod 777 httpdocs/templates/templates_c

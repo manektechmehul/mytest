@@ -1,0 +1,13 @@
+Replace these fields in the base module to get you started::
+ 
+lottery = lottery 
+lottery = lottery
+lottery = lottery
+Lottery = Lottery
+LOTTERY = LOTTERY
+lottery = lottery
+Lottery = Lottery
+lottery_category = lottery_category
+lottery_category_lookup = lottery_category_lookup
+
+

@@ -1,0 +1,27 @@
+# To switch on the site will need config flags
+# I am guessing you can just run this file in mysql yog should do it.
+# then you should see galleries options appear inthe gallery admin module (in the gally listing to choose available categories and in the image detail view to choos ethe categories)
+# this will also switch the gallery lookup at the front end to use the multi cat template
+# REMEMBER TO *** FLUSH *** !!!! when switching system
+
+
+INSERT INTO `configuration_group`(`id`,`name`,`order_num`,`module_id`,`sm_admin_only`) VALUES ( '32','Gallery','320','0','1');
+insert into `configuration`(`group`,`name`,`value`,`title`,`type`,`description`,`options`,`module`,`sm_admin_only`) VALUES('32','GALLERY_HAS_CATEGORIES','1','Galleries has categories','1','Galleries has categories','options','','1');
+
+
+# It will also need these extra tables
+
+create table `gallery_category` (
+	`id` int (11),
+	`title` varchar (1500),
+	`order_num` int (11),
+	`published` tinyint (4),
+	`gallery_id` int (11)
+);
+
+
+create table `gallery_category_lookup` (
+	`id` int (10),
+	`gallery_image_id` int (11),
+	`gallery_category_id` int (11)
+);

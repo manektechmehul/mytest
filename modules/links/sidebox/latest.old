@@ -1,0 +1,8 @@
+<?php
+    $latest_case_study = db_get_single_row('select * from case_study where published = 1 order by order_num limit 1');
+    $smarty->assign('latest_case_study', $latest_case_study); 
+    $case_studies_latest_template_file = "$base_path/modules/case_studies/templates/latest.tpl";
+
+    $filters['case_studies_latest'] = array('search_string'  => '/<!-- CS case studies latest start -->(.*)<!-- CS case studies latest end -->/s',
+         'replace_string' => '{include file="file:'.$case_studies_latest_template_file.'"}');    
+?>

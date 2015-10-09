@@ -1,0 +1,37 @@
+Module: Twitter Blocks
+Version : 1.0
+/*
+About
+Twitter blocks allow the administrators of the site to have many twitter search feeds on a site.
+They can keep a list of previously used items in the database and swap them on when ready
+
+*/
+
+
+--
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values
+('1','SITE_HAS_TWITTER_BLOCKS','1','Twitter blocks','1','Twitter blocks',NULL,'','1');
+
+-- add idea to modules
+insert into `module` (`name`, `path`, `description`, `constant`) values
+('Twitter Blocks','twitter_blocks','Create Twitter blocks to display on required pages','SITE_HAS_TWITTER_BLOCKS');
+
+
+
+// add this to admin/admin_header_inc.php
+ if (SITE_HAS_TWITTER_BLOCKS == "1"){
+                            show_nav_tab_image("/modules/twitter_blocks/admin/twitter_blocks.php", 'tweets', 'Twitter', 'nav-twitter');
+ }
+
+// see assets for tweets images
+
+
+// include
+<link href="/css/twitter.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/twitter.js"></script>
+
+
+// put this in your template file
+ <div id="twitterHolder">
+    <!-- CS Tweet block Start --> Twitter goes here <!-- CS Tweet block End -->
+    </div>

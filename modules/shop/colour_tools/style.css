@@ -1,0 +1,42 @@
+.ui-effects-transfer { border:3px dotted #ccc; } 
+.fisheye { text-align:center; height:240px; position:relative; background:#444; border:0px solid #ccc; overflow:hidden; /* overflow-y:hidden; */ }
+.colour_based_bullet { display:block; width:16px; height:16px; background:orange; }
+a.fisheyeItem { text-align:center; color:#000; font-weight:bold; text-decoration:none; width:15px; position:absolute; display:block; top:0; border:0; padding:0; margin:0; height:240px; }
+.fisheyeItem img { border:none; margin:0 auto 120px auto; width:100%; }
+.fisheyeItem span { display:none; positon:absolute; }
+.fisheyeContainter { height:150px; width:956px; left:500px; position:absolute; }
+/******* end fisheye ****/
+.chooser_holder { height:00px; width:792px; border:1px solid #999; background:#000; _verflow-x:hidden; _osition:absolute; vertical-align:bottom; }
+.chooser_header, .chooser_footer { width:100%; margin:5px; border:0px solid #999; height:40px; }
+.chooser_body { width:900; margin:4px; border:0px solid #999; background:#fff; height:00px; overflow-x:scroll; vertical-align:bottom; }
+.colorblock { vertical-align:middle; text-align:center; padding:0px; margin-top:0px; vertical-align:bottom; float:left; }
+.colorblockSwatch { width:5px; height:140px; border:0px solid #fff; vertical-align:bottom; border-radius:0px; }
+.colorblockText { width:100px; height:40px; vertical-align:bottom; font-size:10pt; display:none; padding:0px; margin:0; }
+/* sort the pallete */
+#sortable { list-style-type:none; margin:0; padding:0; width:264px; font-size:12px; line-height:17px; color:#fff; list-style-image:none; }
+#sortable ul { list-style:none; padding:0; margin:0; }
+#sortable li { padding:0; margin:0; height:29px; text-align:left; cursor:move; list-style-image:none; }
+#sortable li span { margin-left:10px; top:5px; }
+#sortable li span.number { display:block; float:left; width:20px; }
+#sortable li .remove { position:relative; left:24px; }
+#sortable li .remove img { border:0; padding-top:8px; }
+#sortable li .minus { position:relative; left:16px; }
+#sortable li .minus img { border:0; }
+#sortable li .plus { position:relative; left:18px; }
+#sortable li .plus img { border:0; }
+#sortable li .qty { position:relative; width:22px; border:0; padding:0; left:21px; background-color:transparent; font-size:12px; color:#000; margin-bottom:15px; text-align:center; }
+.controls { float:right; border:0px solid red; display:block; width:108px; height:25px; }
+#swatch_filter { width:750px; background:#444; color:#fff; text-align:left; }
+.swatch_filter_holder { width:750px; }
+.season_filter_item, .tone_filter_item { display:inline; }
+.filter_title { font-size:1.1em; font-weight:bold; }
+#swatch_filter { width:750px; background:#444; color:#fff; text-align:left; }
+.swatch_filter_holder { width:750px; }
+.season_filter_item, .tone_filter_item { display:inline; }
+.filter_title { font-size:1.1em; font-weight:bold; }
+.patone_grid_search { colour:#fff; }
+.swatch_item { height:50px; width:102px; display:inline; }
+#swatch_container { width:750px; list-style-type:none; margin:0px; padding:0px; border:0px solid #ccc; margin-top:10px; margin-left:-5px; list-style-image:none; }
+#swatch_container ul { margin:0px; padding:0px; list-style-image:none; }
+#swatch_container li { float:left; padding-left:5px; width:45px; height:20px; padding-right:0px; padding-top:5px; list-style-image:none; }
+#swatch_container div { font-size:12px; color:#fff; width:45px; height:20px; border:solid 0px black; text-align:center; padding-top:0px; border-radius:0px; line-height:18px; }

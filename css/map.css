@@ -1,0 +1,18 @@
+/*
+    Document   : maps
+    Created on : 08-Nov-2012, 16:37:21
+    Author     : gl
+    Description: Style the map's pop up infowindows
+
+
+*/
+.infowindow div { padding: 0px; width: 200px; overflow-x: hidden;} /* setting a overflow hidden fixes firefox scrollbar issue */
+.infowindow h2 { padding: 0px; margin-top: 0px; font-size: 18px; line-height: 18px; color: #7156A4; }
+.infowindow .address { padding: 0px; margin: 0px; font-size: 12px; line-height:  16px; }
+#autocomplete { padding: 4px 5px 3px; width: 420px; height: 25px; float: left; margin-right: 8px; margin-left: 10px; }
+#map_search_bar_holder { width: 100%; padding-top: 5px; text-align: center; height: 50px; }
+#map_search_bar { width: 960px; margin-left:auto; margin-right:auto; }
+#consultantnearme a { margin-right: 5px; float: left; background:url(/images/map/button-consultantnearme.png) top; display:block; width:171px; height:34px; overflow:hidden; text-indent:-5000px; }
+#consultantnearme a:hover { background:url(/images/map/button-consultantnearme.png) bottom; }
+#consultantcontactme a { float: left; background:url(/images/map/button-consultantcontactme.png) top; display:block; width:331px; height:34px; overflow:hidden; text-indent:-5000px; }
+#consultantcontactme a:hover { background:url(/images/map/button-consultantcontactme.png) bottom; }

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+    
+<pre>
+Added Video (YouTube and Vimeo) / External/internal Links  to downloads.
+GL - 21/10/2014
+- used this script to add download type to the configuration of the cms
+
+insert into `configuration_group` (`id`, `name`, `order_num`, `module_id`, `sm_admin_only`) values('25','documents','260','10','1');
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('25','DOWNLOAD_CAT_CASESTUDIES','1','Allow users to use the case study type for document/downloads','1','Allow users to use the case study type for document/downloads',NULL,'','1');
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('25','DOWNLOAD_CAT_DOWNLOADS','2','Allow users to use the downloads type for document/downloads','1','Allow users to use the downloads type for onpagelink',NULL,'','1');
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('25','DOWNLOAD_CAT_LINK','3','Allow users to use the link type for document/downloads','1','Allow users to use the like type for onpagelink',NULL,'','1');
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('25','DOWNLOAD_CAT_VIDEO_LINK','4','Allow users to use the video type for document/downloads','1','Allow users to use the video type for onpagelink',NULL,'','1');
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('25','DOWNLOAD_CAT_STATIC_LINK','5','Allow users to use the static type for document/downloads','1','Allow users to use the static type for onpagelink',NULL,'','1');
+
+- added new tables
+documents_video_type
+document_type
+
+- added new switch in the list template to handle all the new types. Similar structure to the onpagelinks system.
+- Tested locally and on the Live base.
+
+</pre>
+
+    
+    
+    
+    
+    
+    
+<pre>
+Added audio streaming to downloads.
+GL - 15/01/2013
+- audio column to documents table in db
+- admin / documents.php had audio check box
+- added audio in select statements in classes/documents
+- swf/player added
+- link to swf/ player in templates - list.tpl/listall.tpl/results.tpl
+- added audio player links in templates with literal tag
+</pre>
+
+</body>
+</html>

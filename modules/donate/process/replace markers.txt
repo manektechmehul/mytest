@@ -1,0 +1,13 @@
+Replace these fields in the base module to get you started::
+ 
+[[MODULE_URL]] = donate
+[[MAIN_TABLE]] = donate
+[[LOWERCASE_NAME]] = donate
+[[UPPERCASE_NAME]] = Donate
+[[ALLUPPER]] = DONATE
+[[PLURALLOWER]] = donations
+[[PLURALUPPER]] = Donations
+[[CATEGORY_TABLE]] = donate_category
+donation_category_lookup = donate_category_lookup
+
+

@@ -1,0 +1,101 @@
+/* 
+    Document   : lit_review
+    Created on : 25-Jul-2012, 09:32:16
+    Author     : glen
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#bigbook_holder { top: 0px; height:600px; width:960px; position:relative; }
+#main {   }/*
+#bookshelf { height: 330px; border: 2px solid #ccc; }
+
+
+.wowbook { }
+.wowbook-page-content {  overflow:hidden; }
+.wowbook-left  { background: orange; } 
+.wowbook-left .wowbook-gutter-shadow { background: url('x/images/wow_book/page_left_background.png') blue;  opacity: 0.5;  }
+.wowbook-right .wowbook-gutter-shadow { background: url('x/images/wow_book/page_right_background.png') green;  opacity: 0.5;   }
+/*
+
+h1,
+h2 {
+  font-size: 32px;
+  font-weight: normal;
+  font-family: 'News Cycle', sans-serif;
+  text-shadow: 0 1px 0 rgba(10, 10, 10, 0.5);
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 0.5em;
+}
+
+*/
+
+
+nav ul li { display: inline; }
+nav { height: 48px; position: relative; text-align: right; padding-right: 256px; padding-top: 18px; }
+nav a { display: inline-block; height: 35px; width: 48px; padding: 0; background: no-repeat; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+
+nav #index a { background-image: url(/images/literature-button-fastback.png); width: 34px; }
+nav #index a:hover { background: bottom; background-image: url(/images/literature-button-fastback.png); width: 34px;}
+nav #last a { background-image: url(/images/literature-button-fastfwd.png); width: 34px; }
+nav #last a:hover { background: bottom; background-image: url(/images/literature-button-fastfwd.png); width: 34px; }
+nav #next a { background-image: url(/images/literature-button-fwd.png); width: 22px; }
+nav #next a:hover { background: bottom; background-image: url(/images/literature-button-fwd.png); width: 22px; }
+nav #back a { background-image: url(/images/literature-button-back.png); width: 22px; }
+nav #back a:hover { background: bottom; background-image: url(/images/literature-button-back.png); width: 22px; }
+nav a:hover { }
+nav a:active, nav a:hover, nav a { outline: none; }
+
+#cover { display: none; 	}
+
+/*
+.wowbook-page-content { padding: 1em; color: #99C; }
+
+#main {   position: relative; padding-top: 2px;}
+#click_to_open { position: absolute; left: 80px; top: 190px; }
+.js #features { margin-left: -12000px; }
+#features { margin: auto; }
+#features h1 { font-family: 'BebasNeueRegular', sans-serif; font-size: 28px; color: #aa2b2b; border-bottom: 0px solid #AA2B2B; line-height: 1.1; padding: 5px 5px 0px; margin: 0; }
+#features .subtitle { font-family: 'BebasNeueRegular', sans-serif; font-size: 18px; color: black; line-height: 1.5; padding: 5px 5px 0px; font-style: italic; }
+#features p, #features ul { font-family: 'News Cycle', sans-serif; font-size: 12px; margin: 10px; color: #444; }
+#features li { list-style: circle; padding-top: 6px; font-size: 16px; }
+#features li a { color: #501E4F; }
+#features li a:hover { text-decoration: underline; color: #CCC193; }
+#cover { background: #ffffff url("/images/cover.png") no-repeat; }
+.feature { padding: 1em 1em; font-family: 'BebasNeueRegular', sans-serif; height: 600px; width: 400px; background: pink; }
+.feature h1, .feature h2 { font-family: 'BebasNeueRegular', sans-serif; font-size: 38px; color: black; }
+#features .feature.pagefx p { font-size: 22px; }
+#features .feature.pagefx .subtitle { margin-top: 0; font-size: 14px; }
+#features .feature.pagefx h1 { font-size: 36px; color: #aa2b2b; background: none; line-height: 0.7; padding: 5px 0px 0px; margin: 0; }
+#features .easy { background: #ffffff url("/images/easy.png") no-repeat; ffont-size: 1.5em; ffont-family: lato; }
+#features .easy h1, #features .easy p, #features .easy .subtitle { display: none; }
+#features .wowbook-right .easy { background-position: right top; }
+.doc { display: none; background: url("/images/doc_page.png"); font-size: 32px; line-height: 128px; width: 128px; height: 128px; position: relative; text-align: center; }
+#features .design { background: #ffffff url("../images/design.png") no-repeat; }
+#features .design h1 { background: none; text-indent: -10000px; color: #88bfbf; text-shadow: 1px 1px 0px #447f7f; font-size: 144px; line-height: 0.8; bborder-bottom: 2px solid #88bfbf; }
+#features .design .subtitle { font-family: 'News Cycle', sans-serif; font-style: normal; font-size: 30px; color: #333; }
+#features .wowbook-right .design { background: #ffffff url("../images/design.png") right top; }
+#features .wowbook-right .design p { text-align: right; position: absolute; bottom: 1.5em; font-size: 30px; padding-right: 1em; }
+.deeplinking { color: white; background: url("../images/chain.png") no-repeat; }
+.deeplinking h1 { color: white; background: #3d567d !important; }
+.deeplinking a, .deeplinking a:active, .deeplinking a:visited { color: #f8f8f8; text-decoration: underline; }
+.wowbook-right .deeplinking { background-position: top right; }
+#features .feature.numbering { background: url("../images/numbering.png") #ffffff no-repeat; }
+#features .feature.numbering h1 { color: #AA2B2B; background: none; font-size: 40px; padding-left: 0; padding-right: 0; }
+#features .feature.numbering p { font-size: 23px; }
+#features .feature.numbering .wowbook-page-number { text-indent: 100%; overflow: hidden; }
+#features .feature.slideshow h1 { color: #AA2B2B; background: none; font-size: 40px; padding-left: 0; padding-right: 0; }
+#features .feature.slideshow a { display: block; text-align: center; }
+#features .feature.flash { background: url("../images/flash.png") #ffffff no-repeat; padding-top: 170px; }
+#features .feature.flash p { font-size: 20px; padding: 0.7em; }
+#features .feature.flash h1 { display: none; }
+.feature.flash-demo { background: url("../images/flash.png") #ffffff no-repeat; background-position: top right; padding-top: 100px; text-align: center; line-height: 2em; font-size: 1.2em; }
+.more { background: url("../images/more.png") #ffffff no-repeat; padding-top: 30px; }
+.more h1 { display: none; }
+.more ul { margin-left: 1em; }
+.more li { margin-bottom: 0.7em; }
+.wowbook-right .more { background-position: top right; } */

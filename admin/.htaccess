@@ -1,0 +1,7 @@
+php_value session.gc_maxlifetime "9999"
+php_value session.cookie_lifetime "9999"
+php_value date.timezone "Europe/London"
+
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on

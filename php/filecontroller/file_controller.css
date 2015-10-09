@@ -1,0 +1,125 @@
+#addfolder {
+	width:180px;
+	overflow:hidden;
+}
+
+#addfolder p {
+	white-space: normal;
+}
+
+body {
+	background-color: #e1e7eb;
+	padding: 0;
+	margin: 0;
+	white-space: normal;
+}
+	
+#header {
+	border-bottom : 3px solid #72b6e6;
+	width: 100%;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+#treeContainer {
+	float: left;
+	width: 200px;
+	height: 450px;
+	padding: 0px 10px;
+}      
+#treeContainerInner {
+	width: 190px;
+	margin-bottom: 15px;
+	white-space: nowrap;
+	height: 300px;
+	overflow:scroll;	
+}
+       
+#GridOuter {
+	float: left;
+	background-color: #b4c2cb;
+	width: 625px;
+	padding: 5px;
+	margin-left: 10px;
+	padding-bottom: 15px;
+}
+
+td {
+	line-height : 14px;
+}
+
+
+
+#fileGrid {
+	height:370px;
+	overflow-y:scroll;
+	width:560px;
+	background-color: #e1e7eb;	
+	margin: 5px 10px;
+	border: 1px solid gray;	
+	padding: 15px;
+}
+
+#Grid {
+	height:370px;
+	overflow-y:scroll;
+	width:625px;
+}
+
+#Grid img {
+	position relative;
+	left: 50%;
+}
+
+#GridAdd {
+	background-color: #e1e7eb;
+	border: 1px solid gray;
+	margin: 10px 10px 0 10px;	
+	padding: 5px 1px 5px 10px;
+	float: left;  
+	width: 570px; 
+	line-height:  15px;
+}
+
+#GridAdd form{
+	margin: 5px;	
+}
+
+br.clear {
+		clear: both;
+}
+
+
+.fileSquare {
+	float: left;
+	background-color: #eaeef1;
+	margin: 2px 2px 5px 2px;	
+	padding: 5px 5px 0 5px;
+	width: 590px;
+/*	height:150px;
+	width:170px;
+	*/
+}
+
+.fileSquareInner {
+/*	height: 130px;
+	width: 160px;*/
+	float: left;
+	margin-right: 10px; 
+	overflow: hidden;
+	text-align: center;	
+}
+
+.fileDescription {
+	margin-top: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	cursor: hand;	
+}
+
+.fileDelete {
+	float:right;
+	padding: 0 1px;
+	margin: 10px 10px 0 0;
+}
+

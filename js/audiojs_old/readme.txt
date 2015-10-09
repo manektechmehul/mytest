@@ -1,0 +1,1 @@
+The styling css for the players is embemmed in the js. So the audio.js and audio_small_player.js are the same other that the css.

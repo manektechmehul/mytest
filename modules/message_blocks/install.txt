@@ -1,0 +1,72 @@
+/*****************************************************
+Module: Message Blocks
+Created by: GL & AC
+Date: 23/02/2015
+
+Change line 10 in admin/main to the correct number of items required:
+$this->max_items = 6;
+
+Note that the _number is relating to the ID from the DB:
+<!-- CS message_block_1 start --><!-- CS message_block_1 end -->
+<!-- CS message_block_2 start --><!-- CS message_block_2 end -->
+<!-- CS message_block_3 start --><!-- CS message_block_3 end -->
+<!-- CS message_block_4 start --><!-- CS message_block_4 end -->
+<!-- CS message_block_5 start --><!-- CS message_block_5 end -->
+
+/*****************************************************
+Module: Message Blocks
+Created by: GL
+Date: 04/06/2013
+Desc: Allows a user to manage blocks of messages that can be placed anywhere on site. 
+Currently used on MCA (with addition use for email template) and on St Andrews Clubmore.
+
+/**************
+PHP
+**************/
+/* need to update the admin_header_inc
+if (SITE_HAS_MESSAGE_BLOCKS == "1"){
+                            show_nav_tab_image("/modules/message_blocks/admin/main.php", 'message_blocks', 'Message_blocks', 'nav-message-blocks');
+} 
+*/
+
+you need to add the tab graphics for admin too.
+
+/* add this to the site main templates 
+
+<!-- CS message_block start --> message block here x  <!-- CS message_block end -->
+
+*/
+
+/**************
+MYSQL 
+**************/
+CREATE TABLE `message_blocks` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) DEFAULT NULL COMMENT 'friendly admin name',
+  `sys_code` VARCHAR(255) DEFAULT NULL COMMENT 'sys key',
+  `message` VARCHAR(8000) DEFAULT NULL COMMENT 'long message',
+  `show_on_page` TINYINT(4) DEFAULT NULL COMMENT 'show on webpage',
+  `show_on_email` TINYINT(4) DEFAULT NULL COMMENT 'include in cs mailer',
+  PRIMARY KEY (`id`)
+) ENGINE=INNODB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+/* Data for the table `message_blocks` */
+INSERT  INTO `message_blocks`(`id`,`name`,`sys_code`,`message`,`show_on_page`,`show_on_email`) VALUES (1,'Member message','HOMEPAGE_MESSAGE','<p>**************&nbsp;Welcome to may, lets hope all have a supper sunny time.</p>',1,1);
+
+/* add module switch */
+INSERT INTO module (`name`,`path`, `description`,`constant`) VALUES ('message_block','message_blocks','Allows users to edit meesage blocks that are inserted into landing pages and emails','SITE_HAS_MESSAGE_BLOCKS'); 
+
+/* add the group id */
+-- find next id in config group 
+SELECT @new_id := id + 1  FROM configuration_group ORDER BY 1 DESC LIMIT 1;
+INSERT INTO configuration_group (`id`,`name`, order_num, sm_admin_only) VALUES (@new_id, 'message_blocks',@new_id * 10,1);
+
+-- insert into config
+INSERT INTO configuration (`group`, `name`,`value`,`title`, `type`, description, sm_admin_only) VALUES (1,'SITE_HAS_MESSAGE_BLOCKS',1,'Switch on Message Blocks',1,'turn on Message Blocks', 1);
+
+
+/* review changes */
+SELECT * FROM module ORDER BY 1 DESC;
+SELECT * FROM configuration_group ORDER BY 1 DESC;
+SELECT * FROM configuration ORDER BY 1 DESC;
+

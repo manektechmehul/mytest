@@ -1,0 +1,14 @@
+#news-events-section { display:block; }
+
+/* NEWS & EVENTS */
+.newseventsitem { clear:both; }
+#newsevents { margin-bottom:20px; }
+.newsevents-item-date { font-size:11px; float:right; line-height:26px; display:block; margin-top:8px; }
+.newsevents-item-title { display:block; margin-top:20px; border-bottom:1px solid #002f5f; width:100%; text-decoration:none; }
+.newsevents-item-title a { text-decoration:none; }
+.newsevents-item-summary { display:block; font-size:14px; width:100%; line-height:24px; }
+p.newseventssingledate { display:block; border-bottom:1px solid #666; }
+
+/* SOCIAL MEDIA */
+.socialmediafloat { float:right; margin:2px 0 0; }
+.socialmediafloat img { border:none; margin:0 0 0 10px; }

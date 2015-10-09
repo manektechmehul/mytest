@@ -1,0 +1,13 @@
+Replace these fields in the base module to get you started::
+ 
+[[MODULE_URL]] = memory-book 
+[[MAIN_TABLE]] = memorybook
+[[LOWERCASE_NAME]] = memorybook
+[[UPPERCASE_NAME]] = Memorybook
+[[ALLUPPER]] = MEMORYBOOK
+[[PLURALLOWER]] = memories
+[[PLURALUPPER]] = Memories
+[[CATEGORY_TABLE]] = memorybook_category
+[[CATEGORY_LOOKUP_TABLE]] = memorybook_category_lookup
+
+

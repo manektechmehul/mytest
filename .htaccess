@@ -1,0 +1,47 @@
+php_flag register_globals off
+
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
+
+# "60"
+# to allow large images files to be processed
+#php_value upload_max_filesize 22M
+#php_value post_max_size 20M
+#php_value max_input_time 300
+#php_value max_execution_time 300
+# large amount of memory for the thumbnail creator when dealing with files upto 15mb
+#php_value memory_limit 256M
+ 
+# PHP error handling for development servers
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
+
+# enable PHP error logging
+# php_flag  log_errors on
+# php_value error_log  "e:/htdocs/RHospice/php_errors.txt"
+# disable repeated error logging
+#php_flag ignore_repeated_errors on
+#php_flag ignore_repeated_source on
+# prevent access to PHP error log
+<Files php_errors.txt>
+ Order allow,deny
+ Deny from all
+ Satisfy All
+</Files>
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /
+RewriteCond %{http_host} !^www\. [nc]
+RewriteCond %{HTTP_HOST} ^(.*)
+#RewriteRule ^(.*)$ http://www.%1/$1 [r=301,L]
+
+RewriteRule ^sitemap\.xml$ /sitemap_xml.php [NC,L]
+RewriteRule ^robots\.txt$ /robots_txt.php [NC,L]
+
+RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-s 
+RewriteCond %{REQUEST_FILENAME} !-l  
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule !\.(gif|jpg|png|css|js|mov|mp3|m3u|doc|swf|pdf|mp4|flv|htc|xml)$ /index.php [NC,L]

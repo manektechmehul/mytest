@@ -1,0 +1,42 @@
+#main-container { background: url(/images/lit_review_page_bg.jpg) 0px 30px  no-repeat }
+
+#bookcase_holder { height: 310px; margin-top: 14px; width: 960px; }
+#bookcase { display: inline; float: right; padding-right: 123px; list-style: none; *margin-top: 20px; }
+#bookcase li { list-style: none; display: inline-block; height: 245px; padding: 0; margin: 0; /* Ie 7 + 6 fix for display-inline */ zoom:1; *display: inline; _height: 245px; }
+#bookcase li a { display: block; height: 245px; width: 20px; text-indent: -9999px; padding: 0; margin: 0; }
+#bookcase .b1 a { width: 29px; background: url(/images/books/book-1.png) right; }
+#bookcase .b1 a:hover { background: url(/images/books/book-1.png) left; }
+#bookcase .b2 a { width: 47px; background: url(/images/books/book-2.png) right; }
+#bookcase .b2 a:hover { background: url(/images/books/book-2.png) left; }
+#bookcase .b3 a { width: 28px; background: url(/images/books/book-3.png) right; }
+#bookcase .b3 a:hover { background: url(/images/books/book-3.png) left; }
+#bookcase .b4 a { width: 46px; background: url(/images/books/book-4.png) right; }
+#bookcase .b4 a:hover { background: url(/images/books/book-4.png) left; }
+#bookcase .b5 a { width: 34px; background: url(/images/books/book-5.png) right; }
+#bookcase .b5 a:hover { background: url(/images/books/book-5.png) left; }
+#bookcase .b6 a { width: 25px; background: url(/images/books/book-6.png) right; }
+#bookcase .b6 a:hover { background: url(/images/books/book-6.png) left; }
+#bookcase .b7 a { width: 43px; background: url(/images/books/book-7.png) right; }
+#bookcase .b7 a:hover { background: url(/images/books/book-7.png) left; }
+#bookcase .b8 a { width: 34px; background: url(/images/books/book-8.png) right; }
+#bookcase .b8 a:hover { background: url(/images/books/book-8.png) left; }
+#bookcase .b9 a { width: 25px; background: url(/images/books/book-9.png) right; }
+#bookcase .b9 a:hover { background: url(/images/books/book-9.png) left; }
+#bookcase .b10 a { width: 38px; background: url(/images/books/book-10.png) right; }
+#bookcase .b10 a:hover { background: url(/images/books/book-10.png) left; }
+#bookcase .b11 a { width: 25px; background: url(/images/books/book-11.png) right; }
+#bookcase .b11 a:hover { background: url(/images/books/book-11.png) left; }
+#bookcase .b12  { width: 26px; background: url(/images/books/book-12.png) right; }
+
+#features h1 { margin:0; font-size:26px; line-height:26px; }
+.index ul   { list-style:none; margin-left:0; padding:0; }
+.index ul li { line-height:16px; padding:0 0 8px; font-weight:bold; }
+.index ul.bookinfo li { font-weight:normal; font-size:18px; color:#000000; line-height:26px; }
+.index ul li a { text-decoration:none; color:#444; }
+.index ul li a:hover { text-decoration:none; color:#70336f; }
+.index ul li a .author { text-transform:uppercase; font-size:12px; line-height:16px; font-weight:normal; }
+.index ul li a:hover .author { color:#517d30; }
+
+#features p.bookindexlink { margin:0; }
+#features p.bookindexlink a { text-indent:-5000px; display:block; position:absolute; bottom:20px; left:20px; width:157px; height:14px; background:url(/images/backtoindex.png) top left no-repeat; }
+#features p.bookindexlink a:hover { background:url(/images/backtoindex.png) bottom left no-repeat; }

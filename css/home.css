@@ -1,0 +1,69 @@
+/* layout */
+.leftcol { float:left; width:200px; padding-top:20px; }
+.rightcol { float:right; width:730px; padding-top:20px; }
+
+/* slider */
+#banner-container { background:url(/images/banner-bg.png) no-repeat; width:900px; height:300px; margin:0 0 15px; }
+#slider-wrapper { height:300px; overflow:hidden; max-height:300px; float:left; }
+#slider { position:relative; width:960px; height:300px; overflow:hidden; max-height:300px; background:#000 url(/images/slider/loading.gif) no-repeat 50% 50%; z-index:1; }
+#slider img { position:absolute; top:0px; left:0px; display:none; }
+#slider a { border:0; display:block; }
+/* caption styles */
+.nivo-caption { position:absolute; top:15px; left:20px; z-index:8; padding:0; width:380px; text-shadow:1px 1px 0 #000; }
+.nivo-caption h2 { font-size:48px; line-height:48px; margin:0; }
+.nivo-caption a { display:inline !important; }
+.nivo-caption a:hover {  }
+.nivo-caption p { color:#fff; font-size:24px; line-height:30px; margin:0 0 30px; }
+.nivo-html-caption { display:none; }
+/* The Nivo Slider styles */
+.nivoSlider { position:relative; }
+.nivoSlider img { position:absolute; top:0px; left:0px; }
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink { position:absolute; top:0px; left:0px; width:100%; height:100%; border:0; padding:0; margin:0; z-index:6; display:none; }
+/* The slices and boxes in the Slider */
+.nivo-slice { display:block; position:absolute; z-index:5; height:100%; }
+.nivo-box { display:block; position:absolute; z-index:5; }
+/* Direction nav styles (e.g. Next & Prev) */
+#slider .nivo-controlNav { position:absolute; bottom:6px; right:5px; }
+#slider .nivo-controlNav a { position:relative; z-index:9; cursor:pointer; display:block; width:16px; height:16px; background:url(/images/slider/slider-dots.png) no-repeat; text-indent:-9999px; border:0; float:left; margin:0 0px; }
+#slider .nivo-controlNav a.active { background-position:0 -15px; }
+
+/* static promos */
+#staticpromo-container { width:960px; height:140px; overflow:hidden; }
+.staticpromo { width:310px; height:140px; float:left; position:relative; }
+.staticpromo-1 { margin-right:15px; }
+.staticpromo-3 { float:right; }
+#staticpromo-container a h3 { background:rgba(0,0,0,0.5); padding:5px 15px 7px; text-shadow:1px 1px 0 #000; position:absolute; top:0; left:0; margin:50px 0 0; }
+#staticpromo-container a:hover h3 { background:rgba(0,0,0,0.7); color:#a3d9ef; }
+#staticpromo-container a p.staticpromosummary { background:rgba(0,147,208,0.6); padding:5px 15px 7px; font-size:12px; line-height:16px; text-shadow:1px 1px 0 #000; position:absolute; top:0; left:0; margin:86px 0 0; color:#fff; }
+#staticpromo-container a:hover p.staticpromosummary {  }
+#staticpromo-container a p.staticpromobutton { background:rgba(0,147,208,0.6); padding:5px 15px 7px; font-size:12px; line-height:16px; text-shadow:1px 1px 0 #000; position:absolute; top:0; right:0; color:#fff; margin:0; }
+#staticpromo-container a:hover p.staticpromobutton { background:rgba(63,180,228,0.6); }
+
+/* news and events */
+#homelistnews, #homelistevents { margin:0 0 30px; }
+#homelistnews h3, #homelistevents h3 { font-size:24px; line-height:30px; margin:10px 0 0; }
+#homelistnews a:hover, #homelistevents a:hover { text-decoration:none; color:#21ace6; }
+.sideboxitem { margin:10px 0 15px; }
+.sideboxitem p.sideboxitemdate { font-size:14px; }
+.sideboxitem h4 { font-size:20px; line-height:22px; margin:0; border-bottom:#0093D0 1px solid; }
+.sideboxitem h4.newseventsbase { font-size:16px; line-height:18px; }
+.sideboxitem p { font-size:12px; line-height:16px; margin:0; }
+
+/* homepromos */
+#homepromos { width:730px; height:150px; overflow:hidden; margin:25px 0; }
+#homepromos a.homepromo { display:block; width:230px; height:150px; float:left; position:relative; text-decoration:none; box-shadow:1px 1px 1px #666; }
+#homepromos a.homepromo h3 { position:absolute; bottom:10px; left:10px; width:190px; text-decoration:none; background:#fff; padding:10px; margin:0; display:block; z-index:10; }
+#homepromos a.homepromo:hover h3 { background:#444444; color:#fff; }
+#homepromos a.homepromo1 { background:#0093d0; margin:0 20px 0 0; }
+#homepromos a.homepromo2 { background:#0093d0; }
+#homepromos a.homepromo3 { background:#0093d0; float:right; }
+
+/* case studies */
+#sideboxcasestudies { margin:30px 0; }
+#sideboxcasestudies h3 { margin:0 0 10px; }
+#sideboxcasestudies h2 { border-bottom:#0093D0 1px solid; margin:0; line-height:30px; }
+#sideboxcasestudies h2 a:hover { text-decoration:none; color:#21ace6; }
+#sideboxcasestudies p { margin:5px 0 10px; }
+.sideboxcasestudiesleft { width:140px; float:left; padding-top:6px; }
+.sideboxcasestudiesright { width:575px; float:right; }

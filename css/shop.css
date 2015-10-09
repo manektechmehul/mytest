@@ -1,0 +1,86 @@
+#leftcol {
+    float: left;
+    margin: 0 0 15px;
+    width: 184px;
+}
+#rightcol {
+    float: right;
+    width: 754px;
+}
+
+#content .pageimage { width:315px; height:318px; margin:0 -8px 20px 30px; float:right; overflow:hidden; }
+#content .pageimageborder { background:url(/images/shop/box-pageimage.png) top left no-repeat; width:315px; height:318px; }
+
+
+
+/* product */
+#productcolleft { float:left; width:410px; }
+#productcolright { float:right; width:315px; }
+#imageviewer { background:url(/images/shop/box-productimage.png) top left no-repeat; width:302px; height:388px; overflow:hidden; padding:11px 0 0 13px; }
+#imageviewermain { position:relative; overflow:hidden; margin:0; width:302px; height:359px; }
+#imageviewermaincontent { position:absolute; top:0; margin-left:0; }
+ul#imageviewermaincontent { list-style:none; margin:0; padding:0; }
+#imageviewermaincontent li { list-style:none; margin:0; padding:0; }
+#imageviewermaincontent { width:13440px; }
+#imageviewermain ul li { display:block; float:left; margin:0; padding:0; border:none; background-color:#ffffff; }
+#imageviewermain ul li img { display:block; border:0; }
+#imageviewerframe { position:relative; margin:293px 0 0; }
+#imageviewerframe ul { list-style:none; margin:0; padding:0; }
+#imageviewerframe ul li { margin:0 6px 0 0; }
+#imageviewerframe ul li img { border:1px dotted #000000; }
+#imageviewerframe ul li img:hover { border:1px solid #7156a4; }
+
+/* listing */
+#listorder { height:21px; width:744px; clear:both; overflow:hidden; }
+#listorder p.ordertext { margin:0; display:block; float:right; height:21px; width:100px; text-align:right; font-size:12px; line-height:20px; padding:0 3px 0 0; }
+#listorder p.listorderbutton { margin:0; }
+#listorder p.listorderbutton a { font-size:12px; line-height:20px; margin:0 0 0 2px; text-decoration:none; color:#222222; float:right; display:block; background:url(/images/shop/button-toggleprice.png) top; width:102px; height:21px; text-align:center; }
+#listorder p.listorderbutton a:hover { background:url(/images/shop/button-toggleprice.png) bottom; }
+#shoplisting { width:740px; border:2px solid #cccccc; background:#eeeeee; padding:10px 1px; }
+#shoplisting .listproduct { margin:0 0 10px 27px; width:210px; float:left; }
+#shoplisting p.crumbtrail { text-align:left; margin:0; height:18px; letter-spacing:-1px; line-height:18px; display:block; width:210px; margin:0 1px; overflow:hidden; font-size:12px; }
+#shoplisting p.crumbtrail a { color:#444444; text-decoration:none; }
+#shoplisting p.crumbtrail a:hover { text-decoration:underline; }
+#shoplisting .listproductimage { height:210px; width:210px; overflow:hidden; border:1px dotted #000000; border-top:none; background-color:#ffffff; background-position:left center; background-repeat:no-repeat; }
+#shoplisting h4 { margin:0; border:1px dotted #000000; display:block; width:210px; height:25px; }
+#shoplisting h4 a { background:url(/images/shop/productlistname-bg.png) top left repeat-x; display:block; width:210px; height:25px; overflow:hidden; text-align:center; font-size:14px; letter-spacing:-1px; line-height:24px; font-family:myriad-pro, Arial, Helvetica, sans-serif; font-weight:normal; color:#ffffff; text-decoration:none; }
+#shoplisting .pricebuttonleft { padding:0 5px 0 6px; margin:174px 0 0 12px; font-size:12px; float:left; height:24px; background:url(/images/shop/price-left.png) top left; color:#222222; line-height:24px; text-transform:lowercase; }
+#shoplisting .pricebuttonlarge { font-size:18px; }
+#shoplisting .pricebuttonmedium { font-size:14px; }
+#shoplisting .pricebuttonright a { margin:174px 0 0; font-size:12px; line-height:23px; display:block; float:left; width:39px; height:24px; background:url(/images/shop/price-right.png) top; color:#ffffff; text-decoration:none; text-align:center; text-shadow:1px 1px 0 #444444; }
+#shoplisting .pricebuttonright a:hover { background:url(/images/shop/price-right.png) bottom; text-decoration:none; }
+/* #shoplisting .pagination p { display:block; text-align:center; margin:0; font-size:18px; line-height:20px; }
+#shoplisting .pagination p .prevnext { font-size:14px; padding:0 12px; }
+#shoplisting .pagination p a { text-decoration:none; }
+#shoplisting .pagination p a:hover, #shoplisting .pagination p .pag_current { color:#ef3e56; text-decoration:underline; } */
+#shoplistingshadow { background:url(/images/shop/box-productlist-base.png); width:746px; height:26px; overflow:hidden; margin:0 0 10px; }
+
+/* check out */
+.shop-basket-sum { text-align:left; }
+.shop-item-title { font-size:14px; }
+.shop-basket-label { font-weight:bold; }
+.customer-details { text-align:left; }
+.customer-details-title { font-weight:bold; }
+
+/* colourselection */
+#colourselection { position:relative; background:url(/images/shop/box-palette.png) top left no-repeat; width:283px; height:259px; margin:20px 0; padding:2px 20px 0 12px; overflow:hidden; }
+#colourselection h2 { padding:6px 0 0 2px; margin:0; line-height:26px; border:none; display:block; float:left; width:150px; height:26px; overflow:hidden; }
+#colourselection p.savedpalettebutton, #colourselection p.clearbutton, #colourselection p.addtobagbutton, #colourselection p.savemypalettebutton { margin:0; }
+#colourselection p.savedpalettebutton a, #colourselection p.clearbutton a { font-size:12px; text-decoration:none; color:#222222; display:block; height:21px; text-align:center; }
+#colourselection p.savedpalettebutton a { float:right; background:url(/images/shop/button-savedpalette.png) top; width:118px; line-height:18px; }
+#colourselection p.clearbutton a { clear:both; float:left; background:url(/images/shop/button-clearselection.png) top; width:86px; margin-top:16px; line-height:20px; }
+#colourselection p.savedpalettebutton a:hover { background:url(/images/shop/button-savedpalette.png) bottom; }
+#colourselection p.clearbutton a:hover { background:url(/images/shop/button-clearselection.png) bottom; }
+#colourselection p.savemypalettebutton a { background:url(/images/shop/button-savemypalette.png) top; display:block; width:130px; height:33px; overflow:hidden; text-indent:-5000px; float:right; margin-top:2px; }
+#colourselection p.savemypalettebutton a:hover { background:url(/images/shop/button-savemypalette.png) bottom; }
+#colourselection p.addtobagbutton a { background:url(/images/shop/button-addselection.png) top; display:block; width:157px; height:33px; overflow:hidden; text-indent:-5000px; float:right; margin-top:2px; }
+#colourselection p.addtobagbutton a:hover { background:url(/images/shop/button-addselection.png) bottom; }
+#colourselection .selectioncontainer { width:281px; height:170px; overflow:hidden; border:1px dotted #000000; background:#ffffff; }
+
+/* addproductbox */
+#addproductbox { position:relative; background:url(/images/shop/productbox-nocolour.png) top left no-repeat; width:283px; height:53px; margin:20px 0; padding:18px 20px 0 12px; overflow:hidden; }
+#addproductbox h3 { float:left; border:none; display:block; width:62px; height:26px; overflow:hidden; line-height:18px; margin:0; }
+#addproductbox p.altaddtobagbutton { margin:0; }
+#addproductbox p.altaddtobagbutton a { background:url(/images/shop/button-addproduct.png) top; display:block; width:151px; height:33px; overflow:hidden; text-indent:-5000px; margin:0; position:absolute; top:12px; right:20px; }
+#addproductbox p.altaddtobagbutton a:hover { background:url(/images/shop/button-addproduct.png) bottom; }
+#addproductbox .qty { position:relative; width:22px; border:0; padding:0; background-color:transparent; font-size:12px; color:#000; margin:0; text-align:center; }

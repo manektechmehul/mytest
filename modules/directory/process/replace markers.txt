@@ -1,0 +1,13 @@
+Replace these fields in the base module to get you started::
+ 
+[[MODULE_URL]] = directory
+[[MAIN_TABLE]] = directory
+[[LOWERCASE_NAME]] = directory
+[[UPPERCASE_NAME]] = Directory
+[[ALLUPPER]] = DIRECTORY
+[[PLURALLOWER]] = directories
+[[PLURALUPPER]] = Directories
+[[CATEGORY_TABLE]] = directory_category
+[[CATEGORY_LOOKUP_TABLE]] = directory_category_lookup
+
+

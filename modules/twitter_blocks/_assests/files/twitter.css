@@ -1,0 +1,37 @@
+/* twitter */
+
+#twitterHolder { margin-top:77px; }
+
+#latesttweet { width:307px; height:176px; float:right; margin:0 8px 15px; text-align:justify; background: #fff; }
+#latesttweet h2 { margin:0; font-size:26px; line-height:26px; color:#7156a4; }
+
+.twitter_block_header { width:318px; height:77px; overflow:hidden; position:relative; }
+.twitter_block_banner_overlay { background:url(/images/grid-twitterheader.png) top left no-repeat; width:317px; height:86px; position:absolute; top:0; left:0; z-index:50; }
+.twitter_block_footer_overlay { background:url(/images/grid-twitterfooter.png) top left no-repeat; width:317px; height:7px; position:absolute; bottom:0; left:0; z-index:50; }
+
+.twitter-container { clear:both; position:relative; width:317px; background:url(/images/grid-twittertop.png) top left no-repeat; margin: 0px; padding: 2px; }
+.twitter-feed { width:317px; padding-left: 3px; margin: 0px; padding: 0px; }
+.tweet { text-justify: center;  margin: 0px; padding: 0px; }
+
+#twitterusertimeline .tweet { min-height:24px; }
+#twitterusertimeline .tweet .text { font-size:14px; line-height:20px; color:#444; }
+#latesttweet .text a, #latesttweet .text a:visited { color:#443073; text-decoration:underline; }
+#latesttweet .text a:hover { color:#ef3e56; text-decoration:underline; }
+
+.text { height:74px; display:block; padding:8px 20px 0 10px; color:#000; font-size:12px; line-height:21px; }
+.text a { color:#37388b; }
+
+#latesttweet .time a { display:block; color:#888888; text-decoration:none; }
+#latesttweet .time a:hover { color:#888888; text-decoration:underline; }
+
+.time { width:305px; text-align:right; float:right; line-height:14px; height:20px; padding-right:12px; color:#37388b; font-size:12px; overflow:hidden; }
+#latesttweetbase p { display:block; background:#7156a4; width:295px; height:22px; font-size:12px; line-height:21px; margin:0; padding:0 6px; }
+#latesttweetbase p a { color:#ffffff; text-decoration:none; }
+#latesttweetbase p a:hover { text-decoration:underline; }
+
+#more_tweets a { position:absolute; display:block; background:#37388b; background:rgba(55,56,139,0.7); color:#fff; top:0; right:0; width:82px; height:26px; z-index:60; font-size:12px; line-height:24px; text-align:center; border-bottom-left-radius:8px; border-top-right-radius:8px; }
+#more_tweets a:hover { background:#5557C1; text-decoration:none; }
+
+.twitter_block { float:right; height:391px; width:317px; position:relative; overflow:hidden; background:url(/images/grid-twitterbg.png) 0px 79px no-repeat; }
+.twitter_block_name { overflow:hidden; position:absolute; z-index:60; font-size:26px; line-height:30px; color:#fff; text-shadow:1px 1px 1px #000; width:310px; top:40px; left:10px; height:30px; }
+.twitter_block_body { overflow-x: none; overflow-y: none; height: 275px; width: 320px; border: 0px solid blue;}

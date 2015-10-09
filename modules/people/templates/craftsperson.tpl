@@ -1,0 +1,3 @@
+<br />
+{$maker.description}
+<br />

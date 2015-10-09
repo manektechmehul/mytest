@@ -1,0 +1,27 @@
+<?php
+
+1) Run dbscripts in order 
+
+
+2) edit conf file
+
+$module_key = 'SITE_HAS_VIDEO';
+// TODO: register this class name somewhere ??
+//$moduleObject = new vidoeModule($module_path, $paginate, $pageUrl, $module_key);
+$module_prefix = "VIDEO_";
+
+/*
+insert into `configuration` (`id`, `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('702','7','CASESTUDIES_HAS_CATEGORIES','1','Use Categories ','1','','','','1');
+insert into `configuration` (`id`, `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('705','7','CASESTUDIES_HAS_LATEST_SIDEBOX','1','Has Latest sidebox','1','','','','1');
+insert into `configuration` (`id`, `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('709','7','CASESTUDIES_LATEST_SIDEBOX_NUMBER_OF_ITEMS','2','Number of items in latest list sidebox','2','','1,2,3,4,5,6,7,8,9,10,11,12,13,14,15','','1');
+insert into `configuration` (`id`, `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('715','7','CASESTUDIES_HAS_FEATURED_SIDEBOX','1','Has Featured sidebox','1','','','','1');
+insert into `configuration` (`id`, `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('720','7','CASESTUDIES_FEATURED_SIDEBOX_NUMBER_OF_ITEMS','3','Number of items in features list sidebox','2','','1,2,3,4,5,6,7,8,9,10,11,12,13,14,15','','1');
+insert into `configuration` (`id`, `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('750','7','CASESTUDIES_NO_CASESTUDIES_TEXT','Sorry there are case studies yet','No case studies text','0','When there are no case studies to display in a list, show this message',NULL,'','1');
+insert into `configuration` (`id`, `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('755','7','CASESTUDY_BUTTON_TEXT','View all Case Studies','Case study button title','0','Typically -View all case studies-, although we might be giving the items a different name','','','1');
+insert into `configuration` (`id`, `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('792','7','CASESTUDIES_CLASSFILE','casestudies','Dev::Name of the main module class','0','','','','1');
+insert into `configuration` (`id`, `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('795','7','CASESTUDIES_CLASSNAME','CaseStudies','Dev::CaseStudiesModule init()','0','','','','1');
+*/
+
+
+
+?>

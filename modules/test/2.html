@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/pbkdf2.js"></script>
+    <script>
+        var salt = CryptoJS.lib.WordArray.random(128/8); 
+        var key256Bits500Iterations = CryptoJS.PBKDF2("Secret Passphrase", salt, { keySize: 256/32, iterations: 500 });
+        var iv  = CryptoJS.enc.Hex.parse('101112131415161718191a1b1c1d1e1f'); // just chosen for an example, usually random as well
+
+        var encrypted = CryptoJS.AES.encrypt("Message", key256Bits500Iterations, { iv: iv });  
+        var data_base64 = encrypted.ciphertext.toString(CryptoJS.enc.Base64); 
+        var iv_base64   = encrypted.iv.toString(CryptoJS.enc.Base64);       
+        var key_base64  = encrypted.key.toString(CryptoJS.enc.Base64);
+    </script>
+          </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>

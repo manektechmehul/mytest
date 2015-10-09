@@ -1,0 +1,82 @@
+we are using Paypal standard classic form post
+and verifiying payments with IPN and hope to use pdt to display a nice message
+
+
+sandbox test
+https://developer.paypal.com/
+
+go to applications (from top menu) then IPN Simpulator from side menu
+ipn test
+https://developer.paypal.com/webapps/developer/applications/ipn_simulator
+
+
+- use web accept. 
+- click the show all fields bt so you can fill in the order number in the invoice field and the sales total into the mc_gross field.
+
+- test url must start with http, when using base use this
+http://code.creativestream.co.uk/shop/ipn
+
+
+Admin login as
+glenlockhart-facilitator@gmail.com pw:default1234
+
+buyer login as
+glenlockhart-buyer@gmail.com pw:default1234 
+
+
+https://www.sandbox.paypal.com/us/cgi-bin/webscr?dispatch=5885d80a13c0db1f8e263663d3faee8db315373d882600b51a5edf961ea39639
+form post
+https://www.youtube.com/watch?v=qDbTqeSUrQY
+https://www.paypal.com/cgi-bin/webscr?cmd=p/pdn/howto_checkout-outside
+vars listing
+https://developer.paypal.com/webapps/developer/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/#id08A6HH00W2J
+
+general ipn
+https://www.youtube.com/watch?v=XxlLIHodXBA
+file
+https://github.com/paypal/ipn-code-samples/blob/master/paypal_ipn.php
+
+PDT example
+http://samples.geekality.net/pdt/
+
+
+IPN response post fields
+cmd=_notify-validate
+ & residence_country=US
+ & invoice=abc1234
+ & address_city=San+Jose
+ & first_name=John
+ & payer_id=TESTBUYERID01
+ & mc_fee=0.44
+ & txn_id=897563853
+ & receiver_email=seller%40paypalsandbox.com
+ & custom=xyz123
+ & payment_date=11%3A09%3A39+1+May+2014+PDT
+ & address_country_code=US
+ & address_zip=95131
+ & item_name1=something
+ & mc_handling=2.06
+ & mc_handling1=1.67
+ & tax=2.02
+ & address_name=John+Smith
+ & last_name=Smith
+ & receiver_id=seller%40paypalsandbox.com
+ & verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AzY3KjH2Kck4cGgW0aTeH6cNk5AZ
+ & address_country=United+States
+ & payment_status=Completed
+ & address_status=confirmed
+ & business=seller%40paypalsandbox.com
+ & payer_email=buyer%40paypalsandbox.com
+ & notify_version=2.4
+ & txn_type=cart
+ & test_ipn=1
+ & payer_status=verified
+ & mc_currency=USD
+ & mc_gross=15.34
+ & mc_shipping=3.02
+ & mc_shipping1=1.02
+ & item_number1=AK-1234
+ & address_state=CA
+ & mc_gross1=12.34
+ & payment_type=instant
+ & address_street=123%2C+any+street 

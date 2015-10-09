@@ -1,0 +1,22 @@
+#content .chart { display: block; width: 725px; height: 460px; border-radius: 0px; position: relative; box-shadow:0 0 6px #ccc; margin:6px 0; }
+#content .chart-layer { position: absolute; top: 0px; left: 0px; }
+#chart1-1 { z-index:1; }
+#chart1-2 { z-index:2; }
+#chart1-3 { z-index:3; }
+#chart1-4 { z-index:4; }
+
+#content .chart .title { color: #70336F; font-family: "ff-meta-web-pro", Arial, Helvetica, sans-serif; font-size: 18px; margin: 18px; position: absolute; right: 5px; top: 5px; }
+#content .chart .chart_legend_title a { background: url(/images/charts/icons/legend-tab-hide.gif) top left ; padding: 10px 0 0 10px; text-decoration: none; color: #70336F; font-family: "ff-meta-web-pro", Arial, Helvetica, sans-serif; font-size: 14px; display: block; border-bottom: 1px solid #70336f; }
+#content .chart .chart_legend_title a:hover { background: url(/images/charts/icons/legend-tab-hide.gif) bottom  left ; }
+#content .chart .fieldset { padding: 0px; float: right; width: 200px; border: 1px; margin-right: 6px; position: absolute; z-index: 11; right: 10px; top: 50px; background: #fff; }
+#content .chart .fieldset label { width: 180px; height: 20px; padding: 0px;}
+#content .chart .fieldset .key { font-size: 13px; color: #70336F; margin: 6px; display: block; cursor: pointer; width: 180px;}
+#content .chart .fieldset input { padding-left: 10px; padding-right: 10px; }
+
+#content  ._blue { border-bottom: 3px solid   #4A7EBB; }
+#content  ._red { border-bottom: 3px solid #BE4B48; }
+#content  ._green { border-bottom: 3px solid #92D050; }
+#content  ._purple { border-bottom: 3px solid #7D60A0; }
+#content .chart legend { color: #70336F; font-family: "ff-meta-web-pro", Arial, Helvetica, sans-serif; font-size: 16px; cursor: hand; }
+#content .chart img { border:0; padding:0; box-shadow:none; }
+#content .shadow { -moz-box-shadow: 0px 0px 2px 0px #70336F; -webkit-box-shadow: 0px 0px 2px 0px #70336F; box-shadow: 0px 0px 2px 0px #70336F; }

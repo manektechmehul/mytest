@@ -1,0 +1,19 @@
+/* topnav */
+#topnav { width:540px; height:44px; line-height:44px; font-size:24px; font-family:ff-dax-web-pro, Arial, Helvetica, sans-serif; letter-spacing:-1px; text-transform:lowercase; font-weight:bold; float:left; padding-left:4px; }
+#topnav ul { list-style:none; padding:0; margin:0; }
+#topnav ul li { float:left; height:36px; display:block; position:relative; padding-right:6px; }
+#topnav ul li a { float:left; display:block; height:44px; padding:0 25px 0 25px; text-decoration:none; color:#ffffff; letter-spacing:-1px; background:none; }
+#topnav ul li:hover a, #topnav ul li.navon a { color:#9badc8; background:url(/images/subnav-bg.png) top left repeat; border-left:8px solid #9badc8; border-right:8px solid #9badc8; padding:0 17px 0 17px; }
+
+/* dropdown */
+#topnav li ul { position:absolute; left:-999em; z-index:999; width:380px; padding:20px 0 10px 20px; background:#333333 url(/images/subnav-bg.png); border:8px solid #9badc8; border-top:none; }
+#topnav li:hover ul,
+#topnav li.sfHover ul { left:0; top:44px; }
+#topnav li ul li { float:left; height:26px; padding:0; }
+#topnav li ul li a { width:170px; font-size:14px; margin:0 15px 0 0; padding:0; line-height:18px; color:#ffffff; border:none; height:26px; font-weight:normal; letter-spacing:normal; }
+#topnav li:hover ul li a,
+#topnav li.navon ul li a { text-decoration:none; border:none; padding:0; color:#ffffff; background:none; }
+#topnav li ul li a:hover { text-decoration:none; color:#9badc8; }
+
+/* z-index fixing */
+#topnav  { position:relative; z-index:2; }

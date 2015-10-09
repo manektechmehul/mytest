@@ -1,0 +1,1 @@
+This is a specially configured case studies module for use with the factors modules.

@@ -1,0 +1,111 @@
+/* layout */
+html, body { background:#fff url(/images/pagebg-content.png) top repeat-x; }
+#logo { width:426px; height:200px; }
+#header { width:960px; height:127px; overflow:hidden; }
+#case-container { background:#000 url(/images/cinema.jpg) top center no-repeat; }
+#main-container { width:960px; margin:0 auto; padding:30px 0 0; min-height:800px; background:#000 url(/images/cinema.jpg) top center no-repeat; }
+
+/* case studies content */
+#casecontent { margin:0 auto; width:884px; height:354px; background:#dfd7df; overflow:hidden; padding:14px; margin-bottom:50px; }
+#casecats { float:left; overflow:hidden; width:350px; }
+#content { float:right; width:480px; height:314px; overflow-y:scroll; background:#fff url(/images/casebg.png); padding:20px; }
+#content h1, #content h2, #content h3, #content p { margin-top:0; }
+#content h1, #content h2 { color:#7ac142; line-height:26px; font-size:24px; }
+#content h3 { color:#7ac142; font-size:20px; line-height:22px; }
+#casecats .caseimage { width:350px; height:205px; overflow:hidden; position:relative; }
+#casecats .caseimage h1 { display:block; position:absolute; bottom:24px; right:0; z-index:20; color:#fff; text-shadow:1px 1px 0 #4c7729; background:url(/images/casestudiesbggreen.png); padding:16px 12px; margin:0; font-size:24px; line-height:26px; text-align:right; }
+#casecats .caseimage img { position:absolute; top:0; left:0; z-index:10; }
+#casecats ul { list-style:none; padding:0; margin:0; }
+#casecats ul li { line-height:31px; font-size:16px; color:#fff; padding:3px 10px 0; margin:3px 0 0; font-family:"ff-meta-web-pro", Arial, Helvetica, sans-serif; white-space:nowrap; }
+#casecats ul li a, #casecats ul li a:hover { text-decoration:none; color:#fff; }
+#casecats ul li.casecatspurple { background:url(/images/casestudiesbgpurple.png); text-shadow:1px 1px 0 #6b3a6b; }
+#casecats ul li.casecatsgreen { background:url(/images/casestudiesbggreen.png); text-shadow:1px 1px 0 #4c7729; }
+#casecats ul li .casecatstitle { display:block; float:left; width:72px; overflow:hidden; text-transform:uppercase; text-shadow:none; }
+#casecats ul li.casecatspurple .casecatstitle { color:#390038; }
+#casecats ul li.casecatsgreen .casecatstitle { color:#076324; }
+
+/* case studies carousel */
+#casemenu { margin:0 auto; width:872px; height:342px; background:url(/images/casemenubg.png); overflow:hidden; padding:20px }
+#casemenu h2, #casemenu p { margin-top:0; }
+#casemenu h2 { color:#b467b2; line-height:24px; font-size:24px; }
+#casemenu p { color:#fff; }
+
+/* old stuff from list style */
+.cs-item { margin:15px 0 0; padding:20px 0 0; border-top:1px solid #afda8e; }
+.cs-item h3, .cs-item p { margin:4px 0 0; }
+.cs-item h3 a { text-decoration:none; }
+.casestudylist { width:420px; float:right; }
+.casestudy-icon { float:left; width:180px; }
+
+/* socialmedia */
+#socialmediafloat { float:right; margin:-26px 0 0; }
+#socialmediafloat img { border:none; margin:0 0 0 10px; padding:0; box-shadow:none; }
+
+/* plugin */
+#casestudies-carousel img { border-radius:8px; }
+.carouselLeft {
+    background: url("../images/carousel/rotate-left.png") repeat scroll 0 0 transparent;
+    display: none;
+    height: 40px;
+    width: 40px;
+}
+.carouselLeft:hover {
+    background-position: 0 40px;
+    cursor: auto;
+    height: 40px;
+    width: 40px;
+    cursor:pointer;
+}
+.carouselRight {
+    background: url("../images/carousel/rotate-right.png") repeat scroll 0 0 transparent;
+    display: none;
+    height: 40px;
+    width: 40px;
+}
+.carouselRight:hover {
+    background-position: 0 40px;
+    height: 40px;
+    width: 40px;
+    cursor:pointer;
+}
+#carousel-title {
+    display: none;
+    margin: 20px 20px 0;
+    width: 80%;
+    font-size:24px; line-height:24px; color:#9c759b; font-family:"ff-meta-web-pro", Arial, Helvetica, sans-serif;
+}
+#carousel-alt {
+    color: #DDDDDD;
+    display: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 20px 20px;
+}
+
+/* scroll bar colours for ie */
+body{
+scrollbar-face-color: #6CB434;
+scrollbar-shadow-color: #666;
+scrollbar-highlight-color: #ccc;
+scrollbar-3dlight-color: #7D7E94;
+scrollbar-darkshadow-color: #598C2D;
+scrollbar-track-color: #E1E9DA;
+scrollbar-arrow-color: #fff;
+}
+#content::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+#content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+    background: #6CB434;
+}
+
+::-webkit-scrollbar-track-piece {
+    
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}

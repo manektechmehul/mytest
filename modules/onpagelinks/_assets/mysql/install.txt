@@ -1,0 +1,23 @@
+/* Install module */
+
+insert into `module` (`name`, `path`, `description`, `constant`) values('onpagelinks','onpagelinks','This module lists many types of items any where in the cms','SITE_HAS_ONPAGELINKS');
+
+
+ALTER TABLE `configuration_group` CHANGE `id` `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+insert into `configuration_group` (`name`, `order_num`, `module`, `sm_admin_only`) values('Onpagelinks','2020','','1');
+SET @last_id_in_cg = LAST_INSERT_ID();
+
+
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('1','SITE_HAS_ONPAGELINKS','1','On Page Links','1','This module lists many types of items any where in the cms',NULL,'','1');
+
+
+-- now run the create tables script !!!
+
+
+-- INSERT INTO `configuration` (`group`,`name`,`value`,`title`,`type`,`description`,`options`,`module`,`sm_admin_only` ) VALUES
+---(@last_id_in_cg, 'BULLETINS_HAS_SEARCH', 'true', 'has search', '0', 'has search', NULL, '', '1');
+
+
+
+
+

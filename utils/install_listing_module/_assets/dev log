@@ -1,0 +1,11 @@
+2013-09-12 GL
+Done a huge round up and tidy up of items in this module, and decided to try and create a base listings module.
+There are still a few hurdles to cross, with hard coded modules names used in places.
+
+The module sill requires search with results to be enabled and standardised.
+
+The menu and sub menu has been commented and tidied up.
+
+Need to automate the installer somehow.
+
+Currently writing mysql install scripts - need a way to control them via php.

@@ -1,0 +1,42 @@
+///////////////////////////////////////////////////////////////////////////////////////////
+// DB BITS
+
+INSERT INTO `configuration` 
+( `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) VALUES
+('1','SITE_HAS_BULLETINS','1','Site has Bulletins','1','Bulletins',NULL,'','1');
+
+INSERT INTO `module` 
+(`name`, `path`, `description`, `constant`) VALUES
+('bulletins','bulletins','bulletins','SITE_HAS_BULLETINS');
+   
+INSERT INTO `page_type` (`id`, `name`, `module_page`, `module_or_type`, `template`, `maint_title`, `maint_page`, `has_maintence`, `has_subsections`, `has_body`, `has_articles`, `can_edit`, `can_delete`, `config_flag`) VALUES
+('12','bulletins','1','bulletins','bulletins.htm',NULL,NULL,'0','0','1','0','1','0','SITE_HAS_BULLETINS');
+
+// add a new content section MANUALLY Then
+find new one and set content_type.page_type = 12
+
+//  add to admin/admin_header_inc.php
+if (SITE_HAS_BULLETINS == "1") 	show_nav_tab_image("/modules/bulletins/admin/bulletins.php", 'bulletins', 'Bulletins', 'nav-bulletins');
+	
+
+// Code
+add bulletins.htm to templates folder - should you need it, should work fine without
+
+
+//  if duplicating module
+check for overlaps by switching new module on/off 
+
+check the smarty tags + replace strings 
+
+
+check classes bulletins - function AssignSearchCategories
+- assign smartie $smarty->assign('bulletinsSearchCategories', $searchCats);
+
+
+
+
+
+
+
+
+

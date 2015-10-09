@@ -1,0 +1,63 @@
+Installing
+> manually add the configuration group item to the table + module + page_type 
+wire up the content_type to page_type for the new blog section
+
+> add the blog side menu to your template file 
+
+ <!-- CS blog list start -->
+ <!-- CS blog list end -->
+
+> added extra css bits at the end of the content.css - for the pagination control and highlight search items
+*********  CSS **********************
+
+/* blogs pagination & search highlighting */
+#content ul.archive_pagination { display:block; margin:40px 0 0; padding:0; text-align:center; }
+#content .archive_pagination li  { display:inline; padding:4px; font-size:1.2em; }
+#content .archive_pagination li a { text-decoration:none; border:1px solid #ddd; padding:5px; }
+#content .archive_pagination li a:hover { background:#e3f1f5; }
+#content .archive_pagination .archive_on { background:#cadde2; }
+.highlight_word { background:#cadde2; border-bottom:2px solid #0A5668; padding:0 3px; }
+
+
+
+/* blogs */
+.blogsidebox h2 { padding:0 20px; margin:20px 0 0; }
+.blogsidebox .sidebox-item { margin:0; padding:20px; background:none; }
+.blogsidebox .sidebox-item p { margin:4px 0; font-size:16px; }
+.blogsidebox .sidebox-item .blogthumb { width:203px; background:#aaa; text-align:center; margin:0 0 10px; }
+.blog-list-page-item { margin:20px 0 30px; clear:both; }
+.blog-list-page-item h3 { border-bottom:1px solid #aaa; font-size:20px; }
+.blog-list-page-item h3 a { text-decoration:none; }
+.blog_post { clear:both; }
+h3.blogtitle, h2.blogdate { border-bottom:#0093D0 1px solid; }
+h3.blogtitle a:hover { text-decoration:none; color:#21ace6; }
+.post_title { display:block; font-size:18px; font-weight:normal; margin:15px 0 4px; }
+.post_body { display:block; }
+.post_footer { clear:both; font-size:12px; }
+.post_author { font-size:12px; }
+.post_date { font-size:12px; margin:0; }
+.blog_post label { display:block; float:left; width:60px; clear:left; text-align:right; font-size:12px; }
+.blog_post input, .blog_post textarea { margin-bottom:6px; display:block; margin-left:65px; }
+.blog_comment { background:#ebebeb; padding:6px 10px 10px; margin-top:10px; }
+.blog_comment_reply { background-color:#eeeeee; padding:10px; border-top:3px #fff solid; margin-left:30px; }
+.comment_author { font-size:12px; padding:0; margin:2px 0 5px; border-bottom:1px solid #aaa; display:block; }
+.comment_body { display:block; }
+.comment_title { display:block; font-size:18px; font-weight:normal; margin:10px 0; }
+#emailfriend p { margin:6px 0; }
+.blogsidebox-body { padding:5px 0 20px; }
+.blogbox-item { margin:15px 0; }
+.blogbox-item-date { display:block; font-size:12px; font-weight:bold; color:#fff; line-height:18px; background:url(/images/date-bg.png); height:19px; width:57px; float:left; padding:0 0 0 5px; margin:0 0 0 20px; }
+.blogbox-item-title { font-size:16px; color:#edcafe; line-height:18px; display:block; float:right; width:132px; padding:0; margin:0 20px 0 0; }
+.blogbox-item-title a, .blogbox-item-title a:hover { text-decoration:none; }
+.blogbox-item-base { padding:7px 0 20px; font-size:12px; line-height:18px; color:#dddddd; margin:0 20px; }
+input.blogbutton { background:#0093D0; padding:3px 20px 4px; color:#fff; border:0; cursor:pointer; }
+input.blogbutton:hover { background:#21ace6; }
+
+
+
+******** db config bits **********************
+> add item to the defaults table, called blogs_post_count
+insert into `defaults` ( `name`, `value`) values('blogs_post_count','5');
+
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('8','BLOG_COMMENTS_NEED_APPROVAL','0','Blog comments need to be approved','1','Blog comments that are not approved will not be shown until approved',NULL,'','1');
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('8','BLOGS_NUMBER_OF_LATEST_POSTS','5','Number of latest posts to show','2','Number of latest posts to show','1,2,3,4,5,6,7,8,9,10,11,12','','1');

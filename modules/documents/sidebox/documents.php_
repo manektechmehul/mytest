@@ -1,0 +1,6 @@
+<?php
+include_once "$base_path/modules/$module_path/conf.php";
+
+$docs_module->AddSideboxFilter('documents', 'documents');
+
+?>

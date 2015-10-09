@@ -1,0 +1,101 @@
+html, body { background:white; margin:0; padding:0; }
+body { padding-right:20px; font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:11px; }
+
+#adminbox { background:#e1e7eb; width:100%; margin:10px; overflow:hidden; }
+#folders { border:1px solid #ccc; padding:2px; width:680px; }
+#login { font-size:1.3em; font-family:'Gafata', Arial, Helvetica, sans-serif; }
+
+.header { height:50px; /*background:url(/admin/images/header-toprightcorner.gif) top right no-repeat;*/ background:#fff; overflow:hidden; }
+.header td { background:#fff; }
+.header-tab { padding-left:3px; }
+.header div { height:43px; padding:0; margin-top:7px; margin-bottom:0; overflow:hidden; }
+.adminfooter { height:50px; background:url(/admin/images/footer-copyright.gif) bottom right no-repeat; overflow:hidden; }
+.underheader { background:#72b6e6; height:3px; overflow:hidden; }
+.abovefooter { background:#3a759e; height:1px; }
+.contentbox { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:11px; padding:20px; background:#e1e7eb; }
+
+.lightbox { height:32px; background:url(/admin/images/lightbox-bk.gif) repeat-x; }
+.main { height:32px; background:url(/admin/images/main-bk.gif) repeat-x; }
+.submain { height:32px; background:url(/admin/images/submain-bk.gif) repeat-x; }
+
+.contentfieldactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; background:url(/admin/images/content-field-active.gif); width:240px; height:25px; padding:7px 18px 0 38px; margin:0; overflow:hidden; float:left; }
+.contentfieldinactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; background:url(/admin/images/content-field-inactive.gif); width:240px; height:25px; padding:7px 18px 0 38px; overflow:hidden; float:left; }
+.contentsubfieldactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; background:url(/admin/images/contentsub-field-active.gif); width:208px; height:25px; padding:7px 18px 0 70px; overflow:hidden; float:left; }
+.contentsubfieldinactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; background:url(/admin/images/contentsub-field-inactive.gif); width:208px; height:25px; padding:7px 18px 0 70px; overflow:hidden; float:left; }
+.contentpagefieldactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; background:url(/admin/images/contentpage-field-active.gif); width:208px; height:25px; padding:7px 18px 0 102px; overflow:hidden; float:left; }
+.contentpagefieldinactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; background:url(/admin/images/contentpage-field-inactive.gif); width:208px; height:25px; padding:7px 18px 0 102px; overflow:hidden; float:left; }
+.userfieldactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; background:url(/admin/images/user-name-field-active.gif); width:237px; height:25px; padding:7px 18px 0 38px; overflow:hidden; }
+.userfieldinactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; background:url(/admin/images/user-name-field-deactive.gif); width:237px; height:25px; padding:7px 18px 0 38px; overflow:hidden; }
+.usersubfieldactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; background:url(/admin/images/usersub-field-active.gif); width:158px; height:25px; padding:7px 18px 0 70px; overflow:hidden; }
+.usersubfieldinactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; background:url(/admin/images/usersub-field-inactive.gif); width:158px; height:25px; padding:7px 18px 0 70px; overflow:hidden; }
+.userfieldemail { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; background:url(/admin/images/user-email-field.gif); width:258px; height:22px; padding:10px 12px 0 15px; overflow:hidden; }
+.userfieldaccounttype { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; background:url(/admin/images/user-field-accounttype.gif); width:60px; height:22px; padding:10px 12px 0 6px; overflow:hidden; }
+.useron { background:url(/admin/images/user-active.gif); width:23px; height:32px; overflow:hidden; }
+.useroff { background:url(/admin/images/user-inactive.gif); width:23px; height:32px; overflow:hidden; }
+.usersubfieldemail { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; background:url(/admin/images/usersub-field-email.gif); width:241px; height:22px; padding:10px 12px 0 6px; overflow:hidden; }
+.usersubfieldaccounttype { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; background:url(/admin/images/usersub-field-accounttype.gif); width:60px; height:22px; padding:10px 12px 0 6px; overflow:hidden; }
+.usersubon { background:url(/admin/images/usersub-active.gif); width:23px; height:32px; overflow:hidden; }
+.usersuboff { background:url(/admin/images/usersub-inactive.gif); width:23px; height:32px; overflow:hidden; }
+.blogfieldactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; background:url(/admin/images/blog-field-active.gif); width:240px; height:23px; padding:9px 18px 0 38px; overflow:hidden; }
+.blogfieldinactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; background:url(/admin/images/blog-field-inactive.gif); width:240px; height:23px; padding:9px 18px 0 38px; overflow:hidden; }
+
+p, li, td { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:11px; background:#e1e7eb; }
+h1 { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:13px; background:#e1e7eb; }
+h2 { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:13px; background:#e1e7eb; font-weight:normal; }
+h2 a { text-decoration:none; font-weight:bold; }
+h3	{ font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:13px; }
+a img { border:0; outline:none; }
+a { outline:none; }
+a img { border:0; outline:none; }
+.section-top { width:100%;background:url(/admin/images/lightbox-bk.gif); }
+.section-row { background:transparent url(/admin/images/main-bk.gif) repeat scroll 0%; clear:both; height:32px;	}
+.subsection-row { background:transparent url(/admin/images/submain-bk.gif) repeat scroll 0%; clear:both; height:32px; }
+.sectionbutton-row { height:28px; padding:3px 0 0 6px ;background:url(/admin/images/lightbox-bk.gif) center }
+.subsectionbutton-row { height:28px; padding:3px 0 0 32px ;background:url(/admin/images/lightbox-bk.gif) center }
+#adminbox h1, #adminbox h2, .adminboxbuttons { padding-left:6px; }
+.row-title-text, .sub-row-title-text { overflow:hidden; width:240px; -o-text-overflow:ellipsis; /*Opera 9*/ text-overflow:ellipsis;	white-space:nowrap; }
+.sub-row-title-text { width:210px; }
+#top-text { padding-left:6px; }
+
+.newseventtitlefieldactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; background:url(/admin/images/item-title-field-bright.gif); width:237px; height:25px; padding:7px 18px 0 38px; margin:0; overflow:hidden; float:left; }
+.newseventdatefieldactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; background:url(/admin/images/date-general-bright.gif); width:67px; height:25px; padding:7px 12px 0 12px; margin:0; overflow:hidden; float:left; }
+.newseventtitlefieldinactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; background:url(/admin/images/item-title-field-dull.gif); width:237px; height:25px; padding:7px 18px 0 38px; margin:0; overflow:hidden; float:left; }
+.newseventdatefieldinactive { font-family:'Gafata', Arial, Helvetica, sans-serif; font-size:12px; background:url(/admin/images/date-general-dull.gif); width:67px; height:25px; padding:7px 12px 0 12px; margin:0; overflow:hidden; float:left; }	
+
+.heading-blue { color:#0865AA; padding-left:6px; }
+
+.hoverthumb { z-index:0; }
+.hoverthumb:hover { background-color:transparent; z-index:50; }
+.hoverthumb span { position:absolute; padding:5px; top:-1000px; border:1px solid #222; display:none; }
+.hoverthumb span img { border-width:0; padding:2px; }
+.hoverthumb:hover span { display:block; background-color:#ccccee; position:absolute; top:100px; left:120px; }	
+
+#diary_calendar { margin:0 10px; }
+#diary_calendar table  { background-color:#000;}
+#diary_calendar tr.hdr td {border:none; background-color:#3F5F76; color:#FFFBF8; padding:3px; width:80px;}
+#diary_calendar tr.daterow td {border:none; color:#222; padding:5px; width:80px; height:80px}
+#diary_calendar tr.daterow td.weekday { background-color:#D5EAFB; }
+#diary_calendar tr.daterow td.weekendday { background-color:#C3D9E7; }
+#diary_calendar tr.daterow td p { background-color:transparent; color:#0B60A3}
+#diary_calendar tr.daterow td a { background-color:transparent; color:#0B60A3; text-decoration:none}
+#diary_calendar tr.daterow td a:hover { text-decoration:underline}
+#diary_calendar tr.daterow td.notdmonthday {background-color:#BDC4CA; }
+.datenumber { color:#000; font-weight:bold; float:left}
+div.calendar_addbutton {float:left; margin-left:2px}
+a.calendar_addbutton img{visibility:hidden}
+a.calendar_addbutton:hover img {visibility:visible}
+div.calendar-item { clear:left; margin-top:4px;}
+div.calendar-itemtitle { float:left; margin-right:20px;}
+div.calendar_deletebutton   { float:left; margin-left:-16px; visibility:hidden }
+div.calendar-item:hover div.calendar_deletebutton {visibility:visible}
+span.fix_height {line-height:1px; clear:left}
+
+#calendar-select { margin-bottom:10px; }
+#top-row { background:url(/admin/images/lightbox-tall-bk.gif) repeat-x; padding-left:6px; }
+#admin-page-content { padding-left:6px; }
+#second_level_nav { padding-left:6px; background:url(/admin/images/secondrow-bg.jpg) repeat-x; border-bottom:3px solid #72B6E6 ; height:32px; }	
+#second_level_nav a { display:block; padding:10px 1px 0px; float:right; }    
+#second_level_nav a.on { }
+#second_level_nav a:hover { color:#ff4; }
+.form-checkbox { display:block; float:left; width:200px; }
+.form-checkbox-group { width:600px; }

@@ -1,0 +1,13 @@
+Replace these fields in the base module to get you started::
+ 
+booking = booking
+booking = booking
+booking = booking
+Booking = Booking
+BOOKING = BOOKING
+bookings = bookings
+Bookings = Bookings
+booking_category = booking_category
+booking_category_lookup = booking_category_lookup
+
+

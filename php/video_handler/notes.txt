@@ -1,0 +1,21 @@
+To make a video load in page the video link must be initialise by the colorbox js.
+
+so you will need to include the colourbox js and css + Jquery
+
+<link href="/css/colorbox.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.colorbox-min.js"></script><!-- colorbox -->
+
+then you will need an onready
+$(document).ready(function() {
+ $(".video").colorbox();
+});
+
+This assumes you will label the link with a class='video'
+
+your link should look something like:
+
+<a href="/php/video_handler/vimeo.php?height=450&width=800&clip_id=21294658" class="video">Watch video</a>
+
+set the height/width and the clip id

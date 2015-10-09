@@ -1,0 +1,12 @@
+SET @module_const = "SITE_HAS_BULLETINS";
+
+SELECT * FROM module WHERE constant = @module_const;
+
+SELECT * FROM configuration_group ORDER BY 1 DESC LIMIT 1;
+
+SELECT * FROM configuration WHERE `name` = @module_const;
+
+
+SELECT * FROM module ORDER BY 1 DESC LIMIT 1;
+SELECT * FROM configuration_group ORDER BY 1 DESC LIMIT 1;
+SELECT * FROM configuration ORDER BY 1 DESC LIMIT 1;

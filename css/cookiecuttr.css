@@ -1,0 +1,19 @@
+/* This is not the same as the off the shelf cookie cuttr css - adapted for creative stream */
+.cc-cookies { position:relative; float:left; background:#000; width:100%; left:0; top:0; padding:4px 20px; background:#000; color:#fff; font-size:13px; text-shadow:0 -1px 0 rgba(0,0,0,0.35); z-index:99999; text-align:center; }
+.cc-cookies a, .cc-cookies a:hover { color:#fff; text-decoration:underline; }
+.cc-cookies a:hover { text-decoration:none; }
+.cc-overlay { height:100%; padding-top:25%; }
+.cc-cookies-error { float:left; width:90%; text-align:center; margin:1em 0 2em 0; background:#fff; padding:2em 5%; border:1px solid #ccc; font-size:18px; color:#333; }
+#content a.cc-cookie-accept, #content a.cc-cookie-decline, #content a.cc-cookie-reset { display:inline-block; color:#fff; text-decoration:none; background:#7DAF3B; padding:0.25em 0.75em; border-radius:3px; box-shadow:0 0 2px rgba(0,0,0,0.25); text-shadow:0 -1px 0 rgba(0,0,0,0.35); -o-transition:background 0.5s ease-in; -webkit-transition:background 0.25s ease-in; -moz-transition:background 0.25s ease-in; line-height:18px; }
+ #content a.cc-cookie-decline, #content a.cc-cookie-decline { background:#af3b3b; margin-left:0.5em; }
+ #content a.cc-cookie-reset { background:#f15b00; }
+ a.cc-cookie-accept { background:#97bf6e; text-decoration:none; padding:3px 6px; }
+ a:hover.cc-cookie-accept, a:hover.cc-cookie-accept, a:hover.cc-cookie-decline, a:hover.cc-cookie-decline, a:hover.cc-cookie-reset { background:#41203d; -o-transition:background 0.5s ease-in; -webkit-transition:background 0.25s ease-in; -moz-transition:background 0.25s ease-in; }
+.cc-cookies-error #content a.cc-cookie-accept, .cc-cookies-error #content a.cc-cookie-decline { display:block; margin-top:1em; }
+.cc-cookies.cc-discreet { width:auto; padding:0.5em 1em; left:auto; top:auto; }
+.cc-cookies.cc-discreet #content a.cc-cookie-reset { background:none; text-shadow:none; padding:0; text-decoration:underline; }
+.cc-cookies.cc-discreet a:hover.cc-cookie-reset { text-decoration:none; }
+#cookie_status { box-shadow:0 0 2px rgba(0, 0, 0, 0.25); }
+#cookie_status h1 { font-size:22px; color:#fff; text-align:center; line-height:40px; }
+@media (min-width:768px) { .cc-cookies { position:fixed; background:rgba(0,0,0,0.75); float:none; } }
+@media (min-width:992px) { .cc-cookies { font-size:14px; } }

@@ -1,0 +1,22 @@
+tr.stock_row td {
+    background-color: #f5f8ff;
+    padding: 4px 6px;
+}
+table.stock_table {
+    border-spacing: 2px;
+    border-collapse: separate;
+}
+.submit-button{
+    width: 300px;
+}
+#swatch_container{
+    display: block;
+    border: 1px solid red;
+    height: 50px;
+}
+
+
+
+/*
+colpick Color Picker / colpick.com
+*/

@@ -1,0 +1,46 @@
+****************************************
+* Adding the Twitter Module to the SM2.5
+****************************************
+
+1. Copy module code into the module folder (must be called twitter)
+2. Set modules/twitter/twittercache folder permission to 777. possibly chown www-data /<full path>/tittercache
+3. add <!-- CS Tweet Start -->.*<!-- CS Tweet End --> into the page template in templates/index.htm (or similar I use index_twit.htm in the script)
+4. (optionally) go to the website admin and create a new page in hidden pages 
+section called twitter to assign to new template (for Ant to style)
+5. Run the following databse script.
+
+
+-- check there isn't a module with the id 12 already
+-- add the module to the site
+
+INSERT INTO `module` (`id`, `name`, `path`, `description`, `constant`) VALUES ('12', 'twitter', 'twitter', 'Simple Twitter Module', 'SITE_HAS_TWITTER_FEED'); 
+
+-- if you need a test page - I called mine **index_twit.htm** 
+INSERT INTO `page_type` ( `name`, `module_or_type`, `template`, `config_flag`) VALUES ( 'twitter test', 'twitter test', 'index_twit.htm', 'SITE_HAS_TWITTER_FEED');
+
+-- now set the test page to use this page type in the content_type table
+INSERT INTO `configuration_group` (`id`, `name`, `order_num`) VALUES ('12', 'Twitter', '110'); 
+
+-- main switch
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('1','SITE_HAS_TWITTER_FEED','1','Switch on twitter feed','1','turn on twitter module',NULL,'','1');
+-- module details
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('12','TWITTER_FREINDLY_NAME','Creative Stream','Friendly Name','0','Follow <Freindly name>, for link text',NULL,'','1');
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('12','TWITTER_USERNAME','antclifford','Twitter Username','0','Username to follow',NULL,'','1');
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('12','TWITTER_FEED_ON','1','Site has twitter feed','1','Display Last Tweet ',NULL,'','1');
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('12','TWITTER_ITEMS','1','number of tweets to show in simple tweet module','2','','1,2,3,4,5,6,7,8,9,10,11,12,13,14,15','','1');
+insert into `configuration` (`group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('12','TWIITER_CACHE_TIME','600','Twitter User Timeline Cache Time ','0','Twitter User Timeline Cache time ',NULL,'','1');
+-- for the oath bits which need now
+insert into `configuration` ( `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('12','TWIITER_CONSUMER_KEY','zCVaDqqvCObRQUI8GIFmfA','Twitter Oauth Consumer Key','0','Twitter Oauth Consumer Key',NULL,'','1');
+insert into `configuration` ( `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('12','TWIITER_CONSUMER_SECRET','bJSUgca89cswWQZsC9jfCXycSbhedLBzb1vhg6V3ojk','Twitter Oauth Consumer Secret','0','Twitter Oauth Consumer Secret',NULL,'','1');
+insert into `configuration` ( `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('12','TWIITER_OAUTH_TOKEN','68679793-YjJAfsuN10YOfygUfHSmjb11hzZrElhAgLQLfqxc','Twitter Oauth Token','0','Twitter Oauth Token',NULL,'','1');
+insert into `configuration` ( `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('12','TWIITER_OAUTH_TOKEN_SECRET','eKcLN3gNc7NoyHKNrL0YfmI8c60xqhiroyURNgCE0','Twitter Oauth Token Secret','0','Twitter Oauth Token Secret',NULL,'','1');
+insert into `configuration` ( `group`, `name`, `value`, `title`, `type`, `description`, `options`, `module`, `sm_admin_only`) values('12','TWIITER_OAUTH_CALLBACK','','Twitter Oauth Callback','0','Twitter Oauth Callback',NULL,'','1');
+
+
+Load site with the ?flush on the twitter test url you added in the admin as step 4
+
+
+
+ 
+
+

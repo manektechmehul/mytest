@@ -1,0 +1,13 @@
+Replace these fields in the base module to get you started::
+ 
+[[MODULE_URL]] = factor 
+[[MAIN_TABLE]] = factor
+[[LOWERCASE_NAME]] = factor
+[[UPPERCASE_NAME]] = Factor
+[[ALLUPPER]] = FACTOR
+[[PLURALLOWER]] = factors
+[[PLURALUPPER]] = Factors
+[[CATEGORY_TABLE]] = factor_category
+[[CATEGORY_LOOKUP_TABLE]] = factor_category_lookup
+
+

@@ -1,0 +1,74 @@
+body{padding-bottom:40px;color:#5a5a5a}
+.navbar-wrapper{position:absolute;top:0;right:0;left:0;z-index:20}
+.navbar-wrapper
+.container{padding-right:0;padding-left:0}
+.navbar-wrapper
+.navbar{padding-right:15px;padding-left:15px}
+.carousel{height:500px;margin-bottom:60px}
+.carousel-caption{z-index:10}
+.carousel .item{height:500px;background-color:#777}
+.carousel-inner>.item>img{position:absolute;top:0;left:0;min-width:100%;height:500px}
+.marketing{padding-right:15px;padding-left:15px}
+.marketing .col-lg-4{margin-bottom:20px;text-align:center}
+.marketing
+h2{font-weight:normal}
+.marketing .col-lg-4
+p{margin-right:10px;margin-left:10px}
+.featurette-divider{margin:80px 0}
+.featurette-heading{font-weight:300;line-height:1;letter-spacing:-1px}
+@media (min-width: 768px){
+	.marketing{padding-right:0;padding-left:0}
+	.navbar-wrapper{margin-top:20px}
+	.navbar-wrapper .container{padding-right:15px;padding-left:15px}
+	.navbar-wrapper .navbar{padding-right:0;padding-left:0}
+	.navbar-wrapper .navbar{border-radius:4px}
+	.carousel-caption p{margin-bottom:20px;font-size:21px;line-height:1.4}
+	.featurette-heading{font-size:50px}
+}
+@media (min-width: 992px){
+	.featurette-heading{margin-top:120px}
+}
+
+
+/* Gallery styles */
+
+#gallery {
+/*  reset */
+margin:0px; padding:0px; border: 0px solid #ccc; background:#fff; 
+/* The width of the gallery */
+width:420px; height:364px; overflow:hidden; }
+
+#slides {
+/* This is the slide area */
+height:281px;
+/* jQuery changes the width later on to the sum of the widths of all the slides. */
+width:920px; overflow:hidden; border-bottom:1px dotted #000; }
+
+.slide { float:left; }
+
+#gallery_menu {
+/* This is the container for the thumbnails */
+height: 70px; }
+
+#gallery_menu ul { margin:0px; padding:0px; margin-top:10px; }
+#gallery_menu li {
+/* Every thumbnail is a li element */
+width:64px; display:inline-block; list-style:none; height:64px; overflow:hidden; margin-left:5px; border:1px dotted #000; }
+
+#gallery_menu ul :first-child { margin-left:0px; }
+#gallery_menu li.inact:hover {
+/* The inactive state, highlighted on mouse over */
+background:#443073; }
+
+#gallery_menu li.act,li.act:hover {
+/* The active state of the thumb */
+background:#443073; }
+
+#gallery_menu li.act a { cursor:default; }
+
+#gallery_menu .fbar {
+/* The left-most vertical bar, next to the first thumbnail */
+width:0px; }
+
+#gallery_menu li a { display:block; height:64px; }
+#gallery_menu a img { border:none; }
