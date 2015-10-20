@@ -1,4 +1,5 @@
 <?php
+// Hi this is changes for test
 include_once "$base_path/modules/$module_path/conf.php";
 $levels = count($name_parts);
 $smarty->assign('pageName', $currentPageUrl);
